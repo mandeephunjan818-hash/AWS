@@ -7,6 +7,7 @@ import InnerBanner from "@/components/InnerBanner";
 import Image from "next/image";
 import Link from "next/link";
 import parse from "html-react-parser";
+import { getCustomUrl } from "@/utils/urlTransform";
 
 export const revalidate = 300;
 
@@ -35,6 +36,8 @@ export default async function NewsPage({ params }) {
     getNewsStudyBySlug(paramsSlug.slug),
     getOtherPosts(paramsSlug.slug, 10),
   ]);
+
+  study.image = getCustomUrl(study.image);
 
   console.log(study);
   return (

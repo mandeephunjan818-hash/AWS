@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import HomePdf from "@/components/HomePdf";
 import HomeCalculator from "@/components/HomeCalculator";
 import ImportantInfo from "@/components/ImportantInfo";
+import Script from 'next/script'
 
 export async function generateMetadata() {
   return {
@@ -20,10 +21,10 @@ export async function generateMetadata() {
     openGraph: {
       title: 'AWS Private Finance',
       description: 'AWS Private Finance',
-      images: 
-        {
-          url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
-        },
+      images:
+      {
+        url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
+      },
       type: 'website',
     },
   };
@@ -32,7 +33,28 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.variable}>
+      <head>
+
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function (w, d, s, l, i) {
+              w[l] = w[l] || [];
+              w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+              var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+              j.async = true;
+              j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+              f.parentNode.insertBefore(j, f);
+            }
+            )(window, document, 'script', 'dataLayer', 'GTM-PDDWCD62');
+          `}
+        </Script>
+
+      </head>
       <body className="font-poppins">
+        <noscript>
+          <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDDWCD62" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}>
+          </iframe>
+        </noscript>
         <Toaster />
         <NavbarComponent>
           <Navbar />

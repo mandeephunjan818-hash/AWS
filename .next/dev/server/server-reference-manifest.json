@@ -2,6 +2,18 @@
   "node": {
     "4004727f3dad8e090f6df4205ec0b20f2b9fb5767a": {
       "workers": {
+        "app/news/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getNewsStudyBySlug",
+          "filename": "src/actions/newStudy.actions.js"
+        },
+        "app/news/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getNewsStudyBySlug",
+          "filename": "src/actions/newStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -10,6 +22,8 @@
         }
       },
       "layer": {
+        "app/news/[slug]/page": "rsc",
+        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -17,6 +31,18 @@
     },
     "400c051fb722a30e3a8d082bc8bf884e3ad16fa8f8": {
       "workers": {
+        "app/news/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteNewsStudy",
+          "filename": "src/actions/newStudy.actions.js"
+        },
+        "app/news/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteNewsStudy",
+          "filename": "src/actions/newStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -25,6 +51,8 @@
         }
       },
       "layer": {
+        "app/news/[slug]/page": "rsc",
+        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -32,6 +60,18 @@
     },
     "4065d38590e52e9cf5135708448ecd01c1e10fbfc6": {
       "workers": {
+        "app/news/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getNewsStudyById",
+          "filename": "src/actions/newStudy.actions.js"
+        },
+        "app/news/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getNewsStudyById",
+          "filename": "src/actions/newStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -40,6 +80,8 @@
         }
       },
       "layer": {
+        "app/news/[slug]/page": "rsc",
+        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -47,6 +89,18 @@
     },
     "4073ec53a39d6fe2482eb17afd7b9e9619e2b92050": {
       "workers": {
+        "app/news/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createNewsStudy",
+          "filename": "src/actions/newStudy.actions.js"
+        },
+        "app/news/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createNewsStudy",
+          "filename": "src/actions/newStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -55,6 +109,8 @@
         }
       },
       "layer": {
+        "app/news/[slug]/page": "rsc",
+        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -62,6 +118,18 @@
     },
     "4074b45290a1d124fce41cba8d6e87f39cac957e96": {
       "workers": {
+        "app/news/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getNewsStudies",
+          "filename": "src/actions/newStudy.actions.js"
+        },
+        "app/news/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getNewsStudies",
+          "filename": "src/actions/newStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -70,6 +138,8 @@
         }
       },
       "layer": {
+        "app/news/[slug]/page": "rsc",
+        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -77,6 +147,18 @@
     },
     "601b5df33f9517c0ec16f5e8c2c014fc0325c19971": {
       "workers": {
+        "app/news/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getOtherPosts",
+          "filename": "src/actions/newStudy.actions.js"
+        },
+        "app/news/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getOtherPosts",
+          "filename": "src/actions/newStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -85,6 +167,8 @@
         }
       },
       "layer": {
+        "app/news/[slug]/page": "rsc",
+        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -92,6 +176,18 @@
     },
     "609bbfbb388a37f06cccedd3b847641a2098e57c7f": {
       "workers": {
+        "app/news/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateNewsStudy",
+          "filename": "src/actions/newStudy.actions.js"
+        },
+        "app/news/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateNewsStudy",
+          "filename": "src/actions/newStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -100,6 +196,8 @@
         }
       },
       "layer": {
+        "app/news/[slug]/page": "rsc",
+        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -137,6 +235,18 @@
     },
     "403dd90974a0400634b7dab0f9ac94bb9797353609": {
       "workers": {
+        "app/case-studies/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createCaseStudy",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
+        "app/case-studies/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createCaseStudy",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -145,6 +255,8 @@
         }
       },
       "layer": {
+        "app/case-studies/[slug]/page": "rsc",
+        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -152,6 +264,18 @@
     },
     "408912264e964bf9fc61661e0aff264538bfa427a3": {
       "workers": {
+        "app/case-studies/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCaseStudies",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
+        "app/case-studies/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCaseStudies",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -160,6 +284,8 @@
         }
       },
       "layer": {
+        "app/case-studies/[slug]/page": "rsc",
+        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -167,6 +293,18 @@
     },
     "40aa15106dce28bc5bf2e11235e325c7945bad8de9": {
       "workers": {
+        "app/case-studies/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCaseStudyById",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
+        "app/case-studies/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCaseStudyById",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -175,6 +313,8 @@
         }
       },
       "layer": {
+        "app/case-studies/[slug]/page": "rsc",
+        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -182,6 +322,18 @@
     },
     "40eb2fdbc0fdd6f58010fc0c799d1af3592a3603d5": {
       "workers": {
+        "app/case-studies/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCaseStudyBySlug",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
+        "app/case-studies/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCaseStudyBySlug",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -190,6 +342,8 @@
         }
       },
       "layer": {
+        "app/case-studies/[slug]/page": "rsc",
+        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -197,6 +351,18 @@
     },
     "40fb50a850141e53de95aa8f92ef98bf29725c61f8": {
       "workers": {
+        "app/case-studies/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteCaseStudy",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
+        "app/case-studies/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteCaseStudy",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -205,6 +371,8 @@
         }
       },
       "layer": {
+        "app/case-studies/[slug]/page": "rsc",
+        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -212,6 +380,18 @@
     },
     "604c1d840500bb4630d76c7cc891768f4fc3ced783": {
       "workers": {
+        "app/case-studies/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateCaseStudy",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
+        "app/case-studies/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateCaseStudy",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -220,6 +400,8 @@
         }
       },
       "layer": {
+        "app/case-studies/[slug]/page": "rsc",
+        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -227,6 +409,18 @@
     },
     "60bc45021c660c9ca03b81fdfef11361a260a7292d": {
       "workers": {
+        "app/case-studies/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getOtherCaseStudies",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
+        "app/case-studies/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getOtherCaseStudies",
+          "filename": "src/actions/caseStudy.actions.js"
+        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -235,6 +429,8 @@
         }
       },
       "layer": {
+        "app/case-studies/[slug]/page": "rsc",
+        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -404,6 +600,66 @@
       },
       "filename": "src/actions/sendEmail.js",
       "exportedName": "sendEmail"
+    },
+    "00903952f1db2593b00136f2267f8b30dd807c8b8c": {
+      "workers": {
+        "app/news/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getNewsIndex",
+          "filename": "src/actions/newsIndex.actions.js"
+        }
+      },
+      "layer": {
+        "app/news/page": "rsc"
+      },
+      "filename": "src/actions/newsIndex.actions.js",
+      "exportedName": "getNewsIndex"
+    },
+    "40473ed99851b72eca00bc2f43e25ef1f4f7edbf5d": {
+      "workers": {
+        "app/news/page": {
+          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateNewsIndex",
+          "filename": "src/actions/newsIndex.actions.js"
+        }
+      },
+      "layer": {
+        "app/news/page": "rsc"
+      },
+      "filename": "src/actions/newsIndex.actions.js",
+      "exportedName": "updateNewsIndex"
+    },
+    "00686b0c291f152771957fd857caf4931ee63bffb0": {
+      "workers": {
+        "app/case-studies/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getCaseStudyIndex",
+          "filename": "src/actions/caseStudyIndex.actions.js"
+        }
+      },
+      "layer": {
+        "app/case-studies/page": "rsc"
+      },
+      "filename": "src/actions/caseStudyIndex.actions.js",
+      "exportedName": "getCaseStudyIndex"
+    },
+    "40d162d626033200286985665e9b681ff1a74f3459": {
+      "workers": {
+        "app/case-studies/page": {
+          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateCaseStudyIndex",
+          "filename": "src/actions/caseStudyIndex.actions.js"
+        }
+      },
+      "layer": {
+        "app/case-studies/page": "rsc"
+      },
+      "filename": "src/actions/caseStudyIndex.actions.js",
+      "exportedName": "updateCaseStudyIndex"
     }
   },
   "edge": {},
