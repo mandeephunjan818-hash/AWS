@@ -77,7 +77,7 @@ Disallow: /
 
 Sitemap Location :  
 
-Sitemap: https://aws-privatefinance.co.uk/sitemap_index.xml 
+Sitemap: https://aws-privatefinance.co.uk/sitemap.xml 
 
  
     `
