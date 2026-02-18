@@ -4,7 +4,7 @@ import DashboardHeader from "@/lib/DashboardHeader";
 import BusinessFundingForm from "../../components/BusinessFundingForm";
 
 export default async function EditBusinessFundingPage({ params }) {
-  const paramsId = await params.id;
+  const paramsId = (await params).id;
   const { data } = await getBusinessFundingById(paramsId);
   const { data: categories } = await getBusinessCategory();
 

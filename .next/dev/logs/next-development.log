@@ -1,344 +1,41 @@
-[00:00:04.409] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-[00:00:05.520] Server  LOG     ✓ Ready in 4s
-[00:00:10.778] Server  LOG     ○ Compiling / ...
-[00:00:16.589] Server  WARN    Image with src "/calculator.avif" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:03.043] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:03.800] Server  LOG     ✓ Ready in 2.7s
+[00:00:06.856] Server  LOG     ○ Compiling / ...
+[00:00:10.848] Server  WARN    Image with src "/calculator.avif" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:18.061] Server  WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433629/hero10.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:13.286] Server  WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433629/hero10.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:18.071] Server  WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433663/Commercial-Mortgages.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:13.291] Server  WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433663/Commercial-Mortgages.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:18.076] Server  WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433734/Family-Income-Plans.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:13.295] Server  WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433734/Family-Income-Plans.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:18.087] Server  WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433773/Cashflow-Finance-01.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:13.300] Server  WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433773/Cashflow-Finance-01.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:19.026] Server  WARN    ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
-[00:00:19.818] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:20.801] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433629/hero10.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:13.921] Server  WARN    ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
+[00:00:14.463] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.424] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433629/hero10.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:20.801] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433663/Commercial-Mortgages.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:15.424] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433663/Commercial-Mortgages.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:20.801] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433734/Family-Income-Plans.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:15.424] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433734/Family-Income-Plans.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:20.801] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433773/Cashflow-Finance-01.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:15.425] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/v1748433773/Cashflow-Finance-01.webp" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.266] Browser WARN    Image with src "/calculator.avif" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
+[00:00:15.661] Browser WARN    Image with src "/calculator.avif" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
 Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:21.266] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} forbidden={undefined} ...>
-      <RedirectBoundary>
-        <RedirectErrorBoundary router={{...}}>
-          <Head>
-          <__next_root_layout_boundary__>
-            <SegmentViewNode type="layout" pagePath="layout.js">
-              <SegmentTrieNode>
-              <link>
-              <script>
-              <script>
-              <script>
-              <script>
-              <script>
-              <script>
-              <script>
-              <script>
-              <script>
-              <script>
-              <RootLayout>
-                <html lang="en" className="poppins_d4...">
-                  <body className="font-poppins">
-                    <Fe>
-                    <NavbarComponent>
-                    ...
-                      <Home>
-                        <HeroSection>
-                        <TrustPilot>
-                        <div>
-                        <div>
-                        <div>
-                        ...
-                          <div className="relative s...">
-                            <div>
-                            <div className="">
-                              <div className="bg-[#15458...">
-                                <h3>
-                                <form onSubmit={function handleSubmit} className="grid grid-...">
-                                  <div className={"col-span..."}>
-                                    <input
-                                      type="text"
-                                      name="firstName"
-                                      value=""
-                                      onChange={function handleChange}
-                                      placeholder="First Name"
-                                      className={"bg-transparent border border-white/20 px-4 py-2.5 text-[13px] place..."}
--                                     fdprocessedid="hv7vqc"
-                                    >
-                                  <div className={"col-span..."}>
-                                    <input
-                                      type="text"
-                                      name="lastName"
-                                      value=""
-                                      onChange={function handleChange}
-                                      placeholder="Last Name"
-                                      className={"bg-transparent border border-white/20 px-4 py-2.5 text-[13px] place..."}
--                                     fdprocessedid="w7tiic"
-                                    >
-                                  <div className={"col-span..."}>
-                                    <input
-                                      type="tel"
-                                      name="phone"
-                                      value=""
-                                      onChange={function handleChange}
-                                      placeholder="Phone Number"
-                                      className={"bg-transparent border border-white/20 px-4 py-2.5 text-[13px] place..."}
--                                     fdprocessedid="8uud28"
-                                    >
-                                  <div className={"col-span..."}>
-                                    <input
-                                      type="email"
-                                      name="email"
-                                      value=""
-                                      onChange={function handleChange}
-                                      placeholder="Your Email"
-                                      className={"bg-transparent border border-white/20 px-4 py-2.5 text-[13px] place..."}
--                                     fdprocessedid="zpihy9"
-                                    >
-                                  <div className={"col-span..."}>
-                                    <select
-                                      name="service"
-                                      value=""
-                                      onChange={function handleChange}
-                                      className={"bg-transparent border border-white/20 px-4 py-2.5 text-[13px] place..."}
--                                     fdprocessedid="fiect8"
-                                    >
-                                  <div className={"col-span..."}>
-                                    <input
-                                      type="text"
-                                      name="loanAmount"
-                                      value=""
-                                      onChange={function handleChange}
-                                      placeholder="Loan Amount"
-                                      className={"bg-transparent border border-white/20 px-4 py-2.5 text-[13px] place..."}
--                                     fdprocessedid="bk3cr9"
-                                    >
-                                  <div className={"col-span..."}>
-                                    <input
-                                      type="text"
-                                      name="propertyValue"
-                                      value=""
-                                      onChange={function handleChange}
-                                      placeholder="Property Value"
-                                      className={"bg-transparent border border-white/20 px-4 py-2.5 text-[13px] place..."}
--                                     fdprocessedid="z97f5y"
-                                    >
-                                <AsyncScriptLoader(ReCAPTCHA)>
-                                <div className="mt-6 flex ...">
-                                  <button
-                                    onClick={function handleSubmit}
-                                    disabled={false}
-                                    className="bg-white text-[#154583] px-7 py-2.5 text-[12px] tracking-wider font-med..."
--                                   fdprocessedid="8ia1oq"
-                                  >
-+                                   Submit
-                        <Home>
-                          <News>
-                            <div className="section-co...">
-                              <div>
-                              <div className="md:w-[60%]...">
-                                <NewsCard>
-                                  <LinkComponent>
-                                    <LinkComponent href="/news/how-..." className="p-4 shadow...">
-                                      <a className="p-4 shadow..." ref={function} onClick={function onClick} ...>
-                                        <img>
-                                        <div className="mt-3">
-                                          <h6>
-                                          <p>
-                                          <button
-                                            className="w-full text-[13px] font-medium tracking-wide px-8 py-3 custom-b..."
--                                           fdprocessedid="1eu4r"
-                                          >
-                                <NewsCard>
-                                  <LinkComponent>
-                                    <LinkComponent href="/news/docu..." className="p-4 shadow...">
-                                      <a className="p-4 shadow..." ref={function} onClick={function onClick} ...>
-                                        <img>
-                                        <div className="mt-3">
-                                          <h6>
-                                          <p>
-                                          <button
-                                            className="w-full text-[13px] font-medium tracking-wide px-8 py-3 custom-b..."
--                                           fdprocessedid="wgsdpi"
-                                          >
-                    <FooterComponent>
-                      <HomeCalculator>
-                        <div className="bg-gray-100">
-                          <div className="section-co...">
-                            ...
-                              <div className="space-y-6">
-                                <div className="space-y-4">
-                                  <div className="relative">
-                                    <label>
-                                    <div className="relative">
-                                      <span>
-                                      <input
-                                        type="number"
-                                        value=""
-                                        onChange={function onChange}
-                                        className="pl-8 block w-full rounded-lg border-gray-400 shadow-sm focus:border..."
-                                        placeholder="e.g. 350000"
--                                       fdprocessedid="ujrri"
-                                      >
-                                  <div className="relative">
-                                    <label>
-                                    <select
-                                      value="england"
-                                      onChange={function onChange}
-                                      className="block w-full rounded-lg border-gray-400 shadow-sm focus:border-[#1545..."
--                                     fdprocessedid="83d1zf"
-                                    >
-                            <div className={"bg-white..."}>
-                              <h3>
-                              <form onSubmit={function calculateMortgage} className="space-y-4">
-                                <div className="grid sm:gr...">
-                                  <div className="relative">
-                                    <input
-                                      type="number"
-                                      value=""
-                                      onChange={function onChange}
-                                      placeholder="Enter Amount"
-                                      className="w-full border border-gray-300 px-4 py-2.5 text-[13px] placeholder:tex..."
-                                      required={true}
--                                     fdprocessedid="5hye"
-                                    >
-                                  <div className="relative">
-                                    <input
-                                      type="number"
-                                      value=""
-                                      onChange={function onChange}
-                                      placeholder="Years"
-                                      className="w-full border border-gray-300 px-4 py-2.5 text-[13px] placeholder:tex..."
-                                      required={true}
--                                     fdprocessedid="47dmtb"
-                                    >
-                                  <div className="relative">
-                                    <input
-                                      type="number"
-                                      value=""
-                                      onChange={function onChange}
-                                      placeholder="Rate"
-                                      step="0.01"
-                                      className="sm:col-span-2 md:col-span-1 w-full border border-gray-300 px-4 py-2.5..."
-                                      required={true}
--                                     fdprocessedid="9p2xc"
-                                    >
-                                <div className="space-y-2">
-                                  <button
-                                    type="submit"
-                                    className="w-full custom-blue text-white py-2.5 text-[13px] font-medium tracking-w..."
--                                   fdprocessedid="cj0uy"
-                                  >
-+                                   Calculate
-                      ...
-                    ...
-          ...
-
-[00:00:21.266] Browser WARN    Image with src "/icon1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:21.266] Browser WARN    Image with src "/icon2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:21.266] Browser WARN    Image with src "/icon3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:21.266] Browser WARN    Image with src "/icon4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:33.110] Server  LOG     {}
-[00:00:33.294] Server  LOG     {}
-[00:00:34.085] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739259166/Interest_Rate_-_Green_Background1-2048x1239.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.086] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738922343/imgpsh_fullsize_anim-1-2048x1365.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.086] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738924314/mortgage-borrowers.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.086] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739273061/Bank-OF-England-NIght-time_11zon-1-scaled.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.086] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739259767/Vineyard.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.086] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739250668/imgpsh_fullsize_anim-7.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.086] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739261321/Large-Lounge-with-2x-Sofas-1-2048x706.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.086] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739273377/House-Terrace-London-Grey-Brick-House__1.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.086] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928698/Asking-prices-rise-but-mortgages-prove-trickier-to-come-by.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:34.086] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928111/House-London.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:36.568] Browser WARN    Image with src "/pdf1.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:36.569] Browser WARN    Image with src "/pdf2.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:40.469] Browser WARN    Image with src "/Commercial_finances_dropdown.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:00:41.686] Server  LOG     {}
-[00:00:42.744] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:43.855] Browser WARN    Image with src "/calculator.avif" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739259166/Interest_Rate_-_Green_Background1-2048x1239.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738924314/mortgage-borrowers.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738922343/imgpsh_fullsize_anim-1-2048x1365.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739273061/Bank-OF-England-NIght-time_11zon-1-scaled.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739259767/Vineyard.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739250668/imgpsh_fullsize_anim-7.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739261321/Large-Lounge-with-2x-Sofas-1-2048x706.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739273377/House-Terrace-London-Grey-Brick-House__1.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928698/Asking-prices-rise-but-mortgages-prove-trickier-to-come-by.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:43.855] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928111/House-London.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:00.397] Server  LOG     ✓ Compiled in 22ms
-[00:02:02.075] Server  LOG     {}
-[00:02:03.188] Server  LOG     ✓ Compiled in 36ms
-[00:02:05.089] Server  LOG     {}
-[00:02:10.148] Server  WARN    Image with src "/calculator.avif" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:10.382] Server  LOG     {}
-[00:02:12.297] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:14.218] Browser WARN    Image with src "/calculator.avif" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739259166/Interest_Rate_-_Green_Background1-2048x1239.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738924314/mortgage-borrowers.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738922343/imgpsh_fullsize_anim-1-2048x1365.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739273061/Bank-OF-England-NIght-time_11zon-1-scaled.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739259767/Vineyard.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739250668/imgpsh_fullsize_anim-7.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739261321/Large-Lounge-with-2x-Sofas-1-2048x706.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739273377/House-Terrace-London-Grey-Brick-House__1.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928698/Asking-prices-rise-but-mortgages-prove-trickier-to-come-by.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:14.387] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928111/House-London.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:25.076] Server  LOG     {}
-[00:02:26.496] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:02:27.875] Browser WARN    Image with src "/calculator.avif" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:02:28.043] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739259166/Interest_Rate_-_Green_Background1-2048x1239.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:28.043] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738924314/mortgage-borrowers.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:28.043] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738922343/imgpsh_fullsize_anim-1-2048x1365.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:28.043] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739273061/Bank-OF-England-NIght-time_11zon-1-scaled.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:28.043] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739259767/Vineyard.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:28.043] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739250668/imgpsh_fullsize_anim-7.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:28.043] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739261321/Large-Lounge-with-2x-Sofas-1-2048x706.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:28.043] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739273377/House-Terrace-London-Grey-Brick-House__1.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:28.043] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928698/Asking-prices-rise-but-mortgages-prove-trickier-to-come-by.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:28.044] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928111/House-London.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:39.075] Browser WARN    Image with src "/Commercial_finances_dropdown.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
-[00:02:43.048] Server  LOG     {}
-[00:03:09.643] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739340797/90-Loan-to-value-mortgage-for-the-purchase-of-a-_950000-house-01.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:09.644] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739351752/Grey-Sofa-New-Home.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:09.644] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739351826/Bridging-finance-tower-bridge.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:09.644] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739348164/Bridge-in-Southbank-.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:10.039] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739342408/evelyn-paris-QR_vT8_hBZM-unsplash-2048x1365.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:10.195] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739265947/Son-over-London-Bridge_.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:10.895] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928885/Bridging-Loan-For-House-To-HMO-Conversion1.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:11.946] Browser WARN    Image with src "/pdf1.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:11.947] Browser WARN    Image with src "/pdf2.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:23.423] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:25.079] Browser WARN    Image with src "/calculator.avif" is using quality "90" which is not configured in images.qualities [75]. Please update your config to [75, 90].
-Read more: https://nextjs.org/docs/messages/next-image-unconfigured-qualities
-[00:03:25.176] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739340797/90-Loan-to-value-mortgage-for-the-purchase-of-a-_950000-house-01.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:25.176] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739351752/Grey-Sofa-New-Home.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:25.176] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739342408/evelyn-paris-QR_vT8_hBZM-unsplash-2048x1365.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:25.176] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739351826/Bridging-finance-tower-bridge.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:25.176] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739265947/Son-over-London-Bridge_.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:25.176] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1739348164/Bridge-in-Southbank-.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:25.176] Browser WARN    Image with src "https://res.cloudinary.com/dsttrodog/image/upload/w_1200,h_1200,c_limit,q_auto:low,f_auto/v1738928885/Bridging-Loan-For-House-To-HMO-Conversion1.jpg.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:25.176] Browser WARN    Image with src "/pdf1.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:25.176] Browser WARN    Image with src "/pdf2.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.661] Browser WARN    Image with src "/icon1.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.661] Browser WARN    Image with src "/icon2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.661] Browser WARN    Image with src "/icon3.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.662] Browser WARN    Image with src "/icon4.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:15.869] Browser WARN    Ignoring Event: localhost
+[00:00:19.001] Browser WARN    Ignoring Event: localhost
+[00:00:20.365] Browser WARN    Ignoring Event: localhost
+[00:00:22.850] Browser WARN    Image with src "/pdf1.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:22.850] Browser WARN    Image with src "/pdf2.webp" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:26.062] Browser WARN    Ignoring Event: localhost
+[00:00:26.864] Browser WARN    Ignoring Event: localhost
+[00:00:28.341] Browser WARN    Image with src "/nav23.avif" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:28.341] Browser WARN    Image with src "/finance.jpg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:00:29.474] Browser WARN    Ignoring Event: localhost
+[00:00:29.910] Browser WARN    Ignoring Event: localhost
+[00:08:59.544] Server  LOG     ✓ Compiled in 504ms

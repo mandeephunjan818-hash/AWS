@@ -1,7 +1,5 @@
 {
-  "/case-studies/[slug]/page": "app/case-studies/[slug]/page.js",
   "/case-studies/page": "app/case-studies/page.js",
-  "/news/[slug]/page": "app/news/[slug]/page.js",
   "/news/page": "app/news/page.js",
   "/page": "app/page.js"
 }

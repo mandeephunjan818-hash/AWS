@@ -13,17 +13,17 @@ export async function GET() {
 
   try {
 
-  const BussinessCatagory = await getBusinessCategory();
-  const BussinessFunding = await getBusinessFunding();
-  const CaseStudy = await getCaseStudies();
-  const CommercialFinanace = await getCommercialFinances();
-  const Insurance = await getInsurance();
-  const Mortagage = await getMortage();
-  const NewsStudy = await getNewsStudies();
-  const SubInsurance = await getSubInsurance();
-  const SubMortgage = await getSubMortgage();
+    const BussinessCatagory = await getBusinessCategory();
+    const BussinessFunding = await getBusinessFunding();
+    const CaseStudy = await getCaseStudies();
+    const CommercialFinanace = await getCommercialFinances();
+    const Insurance = await getInsurance();
+    const Mortagage = await getMortage();
+    const NewsStudy = await getNewsStudies();
+    const SubInsurance = await getSubInsurance();
+    const SubMortgage = await getSubMortgage();
 
-  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -59,12 +59,12 @@ export async function GET() {
 </url>
 <url>
   <loc>https://aws-privatefinance.co.uk/news</loc>
-  <lastmod>2026-02-06T06:04:21+00:00</lastmod>
+  <lastmod>2026-02-06T06:05:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aws-privatefinance.co.uk/case-studies</loc>
-  <lastmod>2026-02-06T06:04:21+00:00</lastmod>
+  <lastmod>2026-02-05T06:04:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
@@ -77,15 +77,15 @@ export async function GET() {
   <lastmod>2026-02-06T06:04:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-${ Array.isArray(Mortagage?.data) && Mortagage?.data.map(Mortagage => `
+${Array.isArray(Mortagage?.data) && Mortagage?.data.map(Mortagage => `
   <url>
     <loc>https://aws-privatefinance.co.uk/mortgages/${Mortagage.slug}</loc>
-    <lastmod>${Mortagage.updatedAt}</lastmod>
+    <lastmod>2026-02-06T15:45:52.480Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
   `).join('')}
-${ Array.isArray(CaseStudy?.studies) && CaseStudy?.studies.map(CaseStudy => `
+${Array.isArray(CaseStudy?.studies) && CaseStudy?.studies.map(CaseStudy => `
   <url>
     <loc>https://aws-privatefinance.co.uk/case-studies/${CaseStudy.slug}</loc>
     <lastmod>${CaseStudy.updatedAt}</lastmod>
@@ -93,7 +93,7 @@ ${ Array.isArray(CaseStudy?.studies) && CaseStudy?.studies.map(CaseStudy => `
     <priority>0.80</priority>
   </url>
   `).join('')}
-${ Array.isArray(NewsStudy?.studies) && NewsStudy.studies?.map(NewsStudy => `
+${Array.isArray(NewsStudy?.studies) && NewsStudy.studies?.map(NewsStudy => `
   <url>
     <loc>https://aws-privatefinance.co.uk/news/${NewsStudy.slug}</loc>
     <lastmod>${NewsStudy.updatedAt}</lastmod>
@@ -116,7 +116,7 @@ ${ Array.isArray(NewsStudy?.studies) && NewsStudy.studies?.map(NewsStudy => `
   <lastmod>2026-02-06T06:03:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-${ Array.isArray(SubMortgage?.data) && SubMortgage.data?.map(SubMortgage => `
+${Array.isArray(SubMortgage?.data) && SubMortgage.data?.map(SubMortgage => `
   <url>
     <loc>https://aws-privatefinance.co.uk/mortgages/${SubMortgage.category}/${SubMortgage.slug}</loc>
     <lastmod>${SubMortgage.updatedAt ? new Date(SubMortgage.updatedAt).toISOString().replace(/\.\d{3}Z$/, '+00:00') : ''}</lastmod>
@@ -134,7 +134,7 @@ ${ Array.isArray(SubMortgage?.data) && SubMortgage.data?.map(SubMortgage => `
   <lastmod>2026-02-06T06:04:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-${ Array.isArray(CommercialFinanace?.data) && CommercialFinanace.data?.map(CommercialFinanace => `
+${Array.isArray(CommercialFinanace?.data) && CommercialFinanace.data?.map(CommercialFinanace => `
   <url>
     <loc>https://aws-privatefinance.co.uk/commercial-finance/${CommercialFinanace.slug}</loc>
     <lastmod>2026-02-06T06:04:21+00:00</lastmod>
@@ -142,7 +142,7 @@ ${ Array.isArray(CommercialFinanace?.data) && CommercialFinanace.data?.map(Comme
     <priority>0.64</priority>
   </url>
   `).join('')}
-${ Array.isArray(Insurance.data) && Insurance.data?.map(Insurance => `
+${Array.isArray(Insurance.data) && Insurance.data?.map(Insurance => `
   <url>
     <loc>https://aws-privatefinance.co.uk/insurance/${Insurance.slug}</loc>
     <lastmod>2026-02-06T06:04:21+00:00</lastmod>
@@ -150,7 +150,7 @@ ${ Array.isArray(Insurance.data) && Insurance.data?.map(Insurance => `
     <priority>0.64</priority>
   </url>
   `).join('')}
-  ${ Array.isArray(SubInsurance?.data) && SubInsurance.data?.map(SubInsurance => `
+  ${Array.isArray(SubInsurance?.data) && SubInsurance.data?.map(SubInsurance => `
   <url>
     <loc>https://aws-privatefinance.co.uk/insurance/${SubInsurance.category}/${SubInsurance.slug}</loc>
     <lastmod>2026-02-06T06:04:21+00:00</lastmod>
@@ -158,7 +158,7 @@ ${ Array.isArray(Insurance.data) && Insurance.data?.map(Insurance => `
     <priority>0.51</priority>
   </url>
   `).join('')}
-  ${ Array.isArray(BussinessCatagory?.data) && BussinessCatagory.data?.map(BussinessCatagory => `
+  ${Array.isArray(BussinessCatagory?.data) && BussinessCatagory.data?.map(BussinessCatagory => `
   <url>
     <loc>https://aws-privatefinance.co.uk/business-finance/${BussinessCatagory.slug}</loc>
     <lastmod>2026-02-06T06:04:21+00:00</lastmod>
@@ -166,7 +166,7 @@ ${ Array.isArray(Insurance.data) && Insurance.data?.map(Insurance => `
     <priority>0.8</priority>
   </url>
   `).join('')}
-${ Array.isArray(BussinessFunding?.data) && BussinessFunding.data?.map(BussinessFunding => `
+${Array.isArray(BussinessFunding?.data) && BussinessFunding.data?.map(BussinessFunding => `
   <url>
     <loc>https://aws-privatefinance.co.uk/business-finance/${BussinessFunding.cate === "67f7a130bb68239130acb53a" ? "healthcare-finance" : "business-funding"}/${BussinessFunding.slug}</loc>
     <lastmod>2026-02-06T06:04:21+00:00</lastmod>

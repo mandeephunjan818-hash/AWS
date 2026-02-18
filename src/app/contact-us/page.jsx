@@ -5,6 +5,8 @@ import { IoIosSend } from "react-icons/io";
 import { useState } from "react";
 import { sendContactEmail } from "@/actions/sendEmail";
 import ReCAPTCHA from "react-google-recaptcha";
+import { FaFacebookSquare, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
 
 
 const LOCATION = {
@@ -244,6 +246,20 @@ export default function ContactUsPage() {
                       </Link>
                     ))}
                   </div>
+                </div>
+                <div className="border-t border-gray-200 bg-white px-6 md:px-8 py-6" style={{ display: 'flex', justifyContent: 'start', alignItems: 'bottom', gap: '1rem' }} >
+                  <a href='https://www.facebook.com/awsprivatefinance/' target="_blank" className="text-gray-700 hover:text-blue-600">
+                    <FaFacebookSquare size={30} color="#1877F2" />
+                  </a>
+                  <a href='https://www.instagram.com/awsprivatefinance/' target="_blank" className="text-gray-700 hover:text-pink-600">
+                    <FaInstagramSquare size={30} color="#E4405F" />
+                  </a>
+                  <a href='' target="_blank" className="text-gray-700 hover:text-blue-400">
+                    <FaSquareXTwitter size={30} color="#1DA1F2" />
+                  </a>
+                  <a href='https://www.linkedin.com/company/aws-financial-services/' target="_blank" className="text-gray-700 hover:text-blue-700">
+                    <FaLinkedin size={30} color="#0077B5" />
+                  </a>
                 </div>
               </div>
             </div>
