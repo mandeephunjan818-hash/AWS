@@ -62,18 +62,21 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$InnerBa
 ;
 async function generateMetadata({ params }) {
     const paramsId = await params;
-    const { finance } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$businessFunding$2e$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getBusinessFundingBySlug"])(paramsId.slug);
+    console.log("paramsId", paramsId.slug);
+    const { success, data } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$businessFunding$2e$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getBusinessFundingBySlug"])(paramsId.slug);
+    console.log("finance", data, success);
     return {
-        title: finance?.metaTitle,
-        description: finance?.metaDescription,
-        keywords: finance?.metaKeywords,
+        title: data?.metaTitle || "Business Funding - Private Finance",
+        description: data?.metaDescription || "Explore our comprehensive business funding solutions tailored to meet your unique needs. From small business loans to venture capital, we provide the financial support you need to grow and succeed.",
+        keywords: data?.metaKeywords || "business funding, small business loans, venture capital, financial support, business growth",
         openGraph: {
-            title: finance?.metaTitle,
-            description: finance?.metaDescription,
+            title: data?.metaTitle || "Business Funding - Private Finance",
+            description: data?.metaDescription || "Explore our comprehensive business funding solutions tailored to meet your unique needs. From small business loans to venture capital, we provide the financial support you need to grow and succeed.",
             images: {
                 url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`
             },
-            type: 'website'
+            type: 'website',
+            url: `https://www.privatefinance.co.uk/business-finance/${paramsId.slug}`
         }
     };
 }
@@ -81,13 +84,14 @@ async function BusinessFundingPage({ params }) {
     const slug = await params;
     const slugParams = slug.slug;
     const { data } = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$businessFunding$2e$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getBusinessFundingBySlug"])(slugParams);
+    console.log("data", data);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$InnerBanner$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                 image: data?.image
             }, void 0, false, {
                 fileName: "[project]/src/app/business-finance/[category]/[slug]/page.jsx",
-                lineNumber: 34,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -95,23 +99,23 @@ async function BusinessFundingPage({ params }) {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex flex-col md:flex-row gap-8",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "editor-container flex-1",
+                        className: "tw-reset",
                         dangerouslySetInnerHTML: {
                             __html: data?.content || ""
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/business-finance/[category]/[slug]/page.jsx",
-                        lineNumber: 37,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/business-finance/[category]/[slug]/page.jsx",
-                    lineNumber: 36,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/business-finance/[category]/[slug]/page.jsx",
-                lineNumber: 35,
+                lineNumber: 38,
                 columnNumber: 7
             }, this)
         ]

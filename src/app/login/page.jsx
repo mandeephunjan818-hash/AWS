@@ -60,6 +60,7 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
+      <link rel="canonical" href={`https://aws-privatefinance.co.uk/login`} />
       <div className="flex items-center justify-center p-8 bg-blue-800 text-white">
         <div className="w-full max-w-md space-y-8">
           <div className="text-center">

@@ -251,8 +251,9 @@ async function deleteBusinessFunding(id) {
 }
 async function getBusinessFundingBySlug(slug) {
     try {
+        await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$db$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"])();
         const data = await __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$models$2f$business$2d$funding$2e$model$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"].findOne({
-            slug
+            slug: slug
         }).lean();
         return {
             success: true,

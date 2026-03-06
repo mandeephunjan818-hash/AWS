@@ -9,7 +9,9 @@ import Footer from "@/components/Footer";
 import HomePdf from "@/components/HomePdf";
 import HomeCalculator from "@/components/HomeCalculator";
 import ImportantInfo from "@/components/ImportantInfo";
-import Script from 'next/script'
+import Script from 'next/script';
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 export async function generateMetadata() {
   return {
@@ -26,14 +28,17 @@ export async function generateMetadata() {
         url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
+      url: 'https://aws-privatefinance.co.uk/', // Must be an absolute URL
     },
   };
 }
-
 export default function RootLayout({ children }) {
+
   return (
     <html lang="en" className={poppins.variable}>
       <head>
+
+        <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 
         <Script id="gtm-script" strategy="afterInteractive">
           {`
@@ -48,9 +53,8 @@ export default function RootLayout({ children }) {
             )(window, document, 'script', 'dataLayer', 'GTM-PDDWCD62');
           `}
         </Script>
-
       </head>
-      <body className="font-poppins">
+      <body className="font-poppins" suppressHydrationWarning>
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDDWCD62" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}>
           </iframe>
@@ -67,6 +71,8 @@ export default function RootLayout({ children }) {
           <Footer />
         </FooterComponent>
         <BottomMenu />
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

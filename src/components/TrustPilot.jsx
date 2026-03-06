@@ -27,8 +27,14 @@ export default function TrustPilot() {
 
   return (
     <div className="py-4 px-6 bg-gray-100">
+      <h1
+        style={{letterSpacing:'1px'}}
+        className="text-center mx-auto text-[18px] my-2 " 
+        data-style-height="24px"
+        data-style-alignment="center"
+       >Mortgage Broker London | Award-Winning Private Finance Experts</h1>
       <div
-        className="trustpilot-widget"
+        className="trustpilot-widget text-center mx-auto text-[18px] "
         data-locale="en-GB"
         data-template-id="5419b6a8b0d04a076446a9ad"
         data-businessunit-id="5e73387e44891200011a6358"

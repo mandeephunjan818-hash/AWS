@@ -26,6 +26,7 @@ export async function generateMetadata({ params }) {
         url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
+      url: `https://aws-privatefinance.co.uk/news/${paramsId.slug}`, // Must be an absolute URL
     }
   };
 }
@@ -43,7 +44,9 @@ export default async function NewsPage({ params }) {
   return (
     <>
 
-      <InnerBanner image={study.image} isNewsPage={true} />
+      <link rel="canonical" href={`https://aws-privatefinance.co.uk/news/${paramsSlug.slug}`} />
+
+      <InnerBanner image={study?.image} isNewsPage={true} />
 
       <div className="section-container py-16">
 

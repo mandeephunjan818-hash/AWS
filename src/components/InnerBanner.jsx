@@ -2,7 +2,6 @@
 
 import { usePathname } from "next/navigation";
 import BreadCrumb from "./BreadCrumb";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -22,6 +21,8 @@ export default function InnerBanner({
       .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
       .join(" ");
   };
+
+  console.log("image", image);
 
   return (
     <div className="relative h-[65vh] md:h-[70vh] pt-28 md:pt-20">

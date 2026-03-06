@@ -31,7 +31,7 @@ export default async function News() {
         />
       </div>
       <div className="md:w-[60%] grid sm:grid-cols-2 gap-6">
-        {studies.map((card, index) => (
+        {studies?.map((card, index) => (
           <NewsCard key={index} card={card} index={index} />
         ))}
       </div>

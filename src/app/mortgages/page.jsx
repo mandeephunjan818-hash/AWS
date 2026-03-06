@@ -19,6 +19,7 @@ export async function generateMetadata() {
         url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
+      url: 'https://aws-privatefinance.co.uk/mortgages', // Must be an absolute URL
     }
   };
 }
@@ -31,6 +32,7 @@ export default async function MortgagePage() {
 
   return (
     <>
+      <link rel="canonical" href={`https://aws-privatefinance.co.uk/mortgages`} />
       <Banner />
       <div className="section-container py-12">
         {mortgageIndex.content && <div

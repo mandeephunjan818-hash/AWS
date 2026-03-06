@@ -19,6 +19,7 @@ export async function generateMetadata() {
         url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
+      url: 'https://aws-privatefinance.co.uk/business-finance', // Must be an absolute URL
     }
   };
 }
@@ -35,6 +36,7 @@ export default async function BusinessFunding() {
 
   return (
     <>
+      <link rel="canonical" href={`https://aws-privatefinance.co.uk/business-finance`} />
       <Banner />
       <div className="section-container py-12">
         {indexData?.data?.content && (

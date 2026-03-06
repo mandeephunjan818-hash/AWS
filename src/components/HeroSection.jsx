@@ -136,9 +136,9 @@ export default function HeroSection({ slides = [] }) {
                   <span className="block text-sm md:text-[15px] font-light mb-2">
                     {slide.subTitle}
                   </span>
-                  <h1 className="text-[28px] md:text-[32px] lg:text-[37px] font-extralight mb-3">
+                  <div className="text-[28px] md:text-[32px] lg:text-[37px] font-extralight mb-3">
                     {slide.title}
-                  </h1>
+                  </div>
                   <p className="mb-8 leading-loose text-xs md:text-[13px] tracking-wider">
                     {slide.content}
                   </p>

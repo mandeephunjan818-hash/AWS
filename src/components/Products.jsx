@@ -88,7 +88,7 @@ export default function Products({ productData }) {
       <div className="relative z-10">
         <div className="section-container pt-6">
           <div className="max-w-5xl text-center mx-auto">
-            <h2 className="text-[27px] mb-2">{data.title}</h2>
+            <div className="text-[27px] mb-2">{data.title}</div>
             <p className="text-[13px] tracking-wider leading-loose text-gray-700 -mb-6">
               {data.description}
             </p>
@@ -111,9 +111,9 @@ export default function Products({ productData }) {
                 </Link>
                 <div className="p-6">
                   <Link href={item.link}>
-                    <h3 className="text-[17px] tracking-wide mb-2">
+                    <h2 className="text-[17px] tracking-wide mb-2">
                       {item.title}
-                    </h3>
+                    </h2>
                   </Link>
                   <p className="text-[13px] text-gray-700 tracking-wide leading-loose line-clamp-4">
                     {item.description}

@@ -20,6 +20,7 @@ export async function generateMetadata({ params }) {
                 url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
             },
             type: 'website',
+            url: `https://aws-privatefinance.co.uk/insurance/${paramsId.category}`, // Must be an absolute URL
         }
     }
 }
@@ -27,11 +28,13 @@ export async function generateMetadata({ params }) {
 export default async function InsurancePageCategory({ params }) {
     const paramsId = await params;
     const [{ data }, categoryData] = await Promise.all([getSubInsuranceBySlug(paramsId.category), getInsuranceBySlug(paramsId.category)]);
-    return <>
+    return (<>
+        <link rel="canonical" href={`https://aws-privatefinance.co.uk/insurance/${paramsId.category}`} />
         <Banner />
         <div className="section-container py-12">
             {categoryData?.data?.content && <div className="editor-container mb-8" dangerouslySetInnerHTML={{ __html: categoryData?.data?.content || "" }}></div>}
             <Products data={data} startSlug={paramsId.category} />
         </div>
     </>
+    )
 }

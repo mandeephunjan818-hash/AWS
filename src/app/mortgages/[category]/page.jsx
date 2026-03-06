@@ -20,6 +20,7 @@ export async function generateMetadata({ params }) {
                 url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
             },
             type: 'website',
+            url: `https://aws-privatefinance.co.uk/mortgages/${paramsId.category}`, // Must be an absolute URL
         }
     }
 }
@@ -32,6 +33,7 @@ export default async function MortgagePageCategory({ params }) {
     ])
     return (
         <>
+            <link rel="canonical" href={`https://aws-privatefinance.co.uk/mortgages/${paramsId.category}`} />
             <Banner />
             <div className="section-container py-12">
                 {data?.content && <div className="editor-container mb-8" dangerouslySetInnerHTML={{ __html: data?.content || "" }}></div>}

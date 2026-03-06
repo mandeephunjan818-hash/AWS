@@ -120,15 +120,42 @@ async function generateMetadata() {
     };
 }
 async function News() {
+    const NewsStudy = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$newStudy$2e$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getNewsStudies"])();
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "AWS Private Finance News & Insights",
+        "description": "Latest insights, market updates, mortgage news, and financial articles from AWS Private Finance.",
+        "url": "https://aws-privatefinance.co.uk/news",
+        "numberOfItems": 6,
+        "itemListElement": NewsStudy?.studies?.slice(0, 6).map((study, index)=>({
+                "@type": "ListItem",
+                "position": index + 1,
+                "url": `https://aws-privatefinance.co.uk/news/${study.slug?.replace(/"/g, "'")}`,
+                "name": study.title?.replace(/"/g, "'"),
+                "datePublished": study.updatedAt,
+                "description": study.metaDescription?.replace(/"/g, "'")
+            })) || []
+    };
     const [{ studies }, { data }] = await Promise.all([
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$newStudy$2e$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getNewsStudies"])(),
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$actions$2f$newsIndex$2e$actions$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getNewsIndex"])()
     ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("script", {
+                type: "application/ld+json",
+                dangerouslySetInnerHTML: {
+                    __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c')
+                }
+            }, void 0, false, {
+                fileName: "[project]/src/app/news/page.jsx",
+                lineNumber: 52,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$Banner$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/src/app/news/page.jsx",
-                lineNumber: 32,
+                lineNumber: 58,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -141,7 +168,7 @@ async function News() {
                         }
                     }, void 0, false, {
                         fileName: "[project]/src/app/news/page.jsx",
-                        lineNumber: 35,
+                        lineNumber: 61,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$news$2f$components$2f$NewsPagination$2e$jsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
@@ -149,13 +176,13 @@ async function News() {
                         itemsPerPage: 12
                     }, void 0, false, {
                         fileName: "[project]/src/app/news/page.jsx",
-                        lineNumber: 40,
+                        lineNumber: 66,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/news/page.jsx",
-                lineNumber: 33,
+                lineNumber: 59,
                 columnNumber: 7
             }, this)
         ]

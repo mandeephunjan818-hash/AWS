@@ -2,6 +2,7 @@ import { getTeamMembers } from "@/actions/team.actions";
 import { getTeamIndex } from "@/actions/teamIndex.actions";
 import Banner from "@/components/Banner";
 import Image from "next/image";
+import ClientRedirect from "@/components/ClientRedirect";
 
 export async function generateMetadata() {
   const { data } = await getTeamIndex();
@@ -17,6 +18,7 @@ export async function generateMetadata() {
         url: `https://aws-privatefinance.co.uk/logodark.webp`, // Must be an absolute URL
       },
       type: 'website',
+      url: 'https://aws-privatefinance.co.uk/meet-the-team', // Must be an absolute URL
     },
   };
 }
@@ -189,6 +191,8 @@ export default async function TeamPage() {
 
   return (
     <>
+    <link rel="canonical" href={`https://aws-privatefinance.co.uk/meet-the-team`} />
+      {/* <ClientRedirect /> */}
       <Banner />
       <div className="bg-gray-50 min-h-screen">
         <section className="section-container py-16">

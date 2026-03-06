@@ -2,12 +2,6 @@
   "node": {
     "4004727f3dad8e090f6df4205ec0b20f2b9fb5767a": {
       "workers": {
-        "app/news/page": {
-          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getNewsStudyBySlug",
-          "filename": "src/actions/newStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -16,7 +10,6 @@
         }
       },
       "layer": {
-        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -24,12 +17,6 @@
     },
     "400c051fb722a30e3a8d082bc8bf884e3ad16fa8f8": {
       "workers": {
-        "app/news/page": {
-          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteNewsStudy",
-          "filename": "src/actions/newStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -38,7 +25,6 @@
         }
       },
       "layer": {
-        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -46,12 +32,6 @@
     },
     "4065d38590e52e9cf5135708448ecd01c1e10fbfc6": {
       "workers": {
-        "app/news/page": {
-          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getNewsStudyById",
-          "filename": "src/actions/newStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -60,7 +40,6 @@
         }
       },
       "layer": {
-        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -68,12 +47,6 @@
     },
     "4073ec53a39d6fe2482eb17afd7b9e9619e2b92050": {
       "workers": {
-        "app/news/page": {
-          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "createNewsStudy",
-          "filename": "src/actions/newStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -82,7 +55,6 @@
         }
       },
       "layer": {
-        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -90,12 +62,6 @@
     },
     "4074b45290a1d124fce41cba8d6e87f39cac957e96": {
       "workers": {
-        "app/news/page": {
-          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getNewsStudies",
-          "filename": "src/actions/newStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -104,7 +70,6 @@
         }
       },
       "layer": {
-        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -112,12 +77,6 @@
     },
     "601b5df33f9517c0ec16f5e8c2c014fc0325c19971": {
       "workers": {
-        "app/news/page": {
-          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getOtherPosts",
-          "filename": "src/actions/newStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -126,7 +85,6 @@
         }
       },
       "layer": {
-        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -134,12 +92,6 @@
     },
     "609bbfbb388a37f06cccedd3b847641a2098e57c7f": {
       "workers": {
-        "app/news/page": {
-          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "updateNewsStudy",
-          "filename": "src/actions/newStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -148,7 +100,6 @@
         }
       },
       "layer": {
-        "app/news/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/newStudy.actions.js",
@@ -186,12 +137,6 @@
     },
     "403dd90974a0400634b7dab0f9ac94bb9797353609": {
       "workers": {
-        "app/case-studies/page": {
-          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "createCaseStudy",
-          "filename": "src/actions/caseStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -200,7 +145,6 @@
         }
       },
       "layer": {
-        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -208,12 +152,6 @@
     },
     "408912264e964bf9fc61661e0aff264538bfa427a3": {
       "workers": {
-        "app/case-studies/page": {
-          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getCaseStudies",
-          "filename": "src/actions/caseStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -222,7 +160,6 @@
         }
       },
       "layer": {
-        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -230,12 +167,6 @@
     },
     "40aa15106dce28bc5bf2e11235e325c7945bad8de9": {
       "workers": {
-        "app/case-studies/page": {
-          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getCaseStudyById",
-          "filename": "src/actions/caseStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -244,7 +175,6 @@
         }
       },
       "layer": {
-        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -252,12 +182,6 @@
     },
     "40eb2fdbc0fdd6f58010fc0c799d1af3592a3603d5": {
       "workers": {
-        "app/case-studies/page": {
-          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getCaseStudyBySlug",
-          "filename": "src/actions/caseStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -266,7 +190,6 @@
         }
       },
       "layer": {
-        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -274,12 +197,6 @@
     },
     "40fb50a850141e53de95aa8f92ef98bf29725c61f8": {
       "workers": {
-        "app/case-studies/page": {
-          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "deleteCaseStudy",
-          "filename": "src/actions/caseStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -288,7 +205,6 @@
         }
       },
       "layer": {
-        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -296,12 +212,6 @@
     },
     "604c1d840500bb4630d76c7cc891768f4fc3ced783": {
       "workers": {
-        "app/case-studies/page": {
-          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "updateCaseStudy",
-          "filename": "src/actions/caseStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -310,7 +220,6 @@
         }
       },
       "layer": {
-        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -318,12 +227,6 @@
     },
     "60bc45021c660c9ca03b81fdfef11361a260a7292d": {
       "workers": {
-        "app/case-studies/page": {
-          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false,
-          "exportedName": "getOtherCaseStudies",
-          "filename": "src/actions/caseStudy.actions.js"
-        },
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/about.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE2 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE3 => \"[project]/src/actions/heroSection.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE4 => \"[project]/src/actions/product.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE5 => \"[project]/src/actions/sendEmail.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
@@ -332,7 +235,6 @@
         }
       },
       "layer": {
-        "app/case-studies/page": "rsc",
         "app/page": "rsc"
       },
       "filename": "src/actions/caseStudy.actions.js",
@@ -503,65 +405,230 @@
       "filename": "src/actions/sendEmail.js",
       "exportedName": "sendEmail"
     },
-    "00903952f1db2593b00136f2267f8b30dd807c8b8c": {
+    "00da4beafdc91462f771dfe445b65bf273929501db": {
       "workers": {
-        "app/news/page": {
-          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/business-finance/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessCategory.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/businessFundingIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
-          "exportedName": "getNewsIndex",
-          "filename": "src/actions/newsIndex.actions.js"
+          "exportedName": "getBusinessCategory",
+          "filename": "src/actions/businessCategory.actions.js"
         }
       },
       "layer": {
-        "app/news/page": "rsc"
+        "app/business-finance/page": "rsc"
       },
-      "filename": "src/actions/newsIndex.actions.js",
-      "exportedName": "getNewsIndex"
+      "filename": "src/actions/businessCategory.actions.js",
+      "exportedName": "getBusinessCategory"
     },
-    "40473ed99851b72eca00bc2f43e25ef1f4f7edbf5d": {
+    "4016f00f33481989e7a5820f7acb9c44c58a1d9439": {
       "workers": {
-        "app/news/page": {
-          "moduleId": "[project]/.next-internal/server/app/news/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/newsIndex.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/newStudy.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/business-finance/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessCategory.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/businessFundingIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
-          "exportedName": "updateNewsIndex",
-          "filename": "src/actions/newsIndex.actions.js"
+          "exportedName": "getBusinessCategoryBySlug",
+          "filename": "src/actions/businessCategory.actions.js"
         }
       },
       "layer": {
-        "app/news/page": "rsc"
+        "app/business-finance/page": "rsc"
       },
-      "filename": "src/actions/newsIndex.actions.js",
-      "exportedName": "updateNewsIndex"
+      "filename": "src/actions/businessCategory.actions.js",
+      "exportedName": "getBusinessCategoryBySlug"
     },
-    "00686b0c291f152771957fd857caf4931ee63bffb0": {
+    "40309f282a0890d266747af63e1b3886bf1508a49d": {
       "workers": {
-        "app/case-studies/page": {
-          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/business-finance/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessCategory.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/businessFundingIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
-          "exportedName": "getCaseStudyIndex",
-          "filename": "src/actions/caseStudyIndex.actions.js"
+          "exportedName": "getBusinessCategoryById",
+          "filename": "src/actions/businessCategory.actions.js"
         }
       },
       "layer": {
-        "app/case-studies/page": "rsc"
+        "app/business-finance/page": "rsc"
       },
-      "filename": "src/actions/caseStudyIndex.actions.js",
-      "exportedName": "getCaseStudyIndex"
+      "filename": "src/actions/businessCategory.actions.js",
+      "exportedName": "getBusinessCategoryById"
     },
-    "40d162d626033200286985665e9b681ff1a74f3459": {
+    "405a8d4ba2d98fd99c5b6d7c25e37b1efd1e1ace85": {
       "workers": {
-        "app/case-studies/page": {
-          "moduleId": "[project]/.next-internal/server/app/case-studies/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/caseStudy.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/caseStudyIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+        "app/business-finance/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessCategory.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/businessFundingIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false,
-          "exportedName": "updateCaseStudyIndex",
-          "filename": "src/actions/caseStudyIndex.actions.js"
+          "exportedName": "deleteBusinessCategory",
+          "filename": "src/actions/businessCategory.actions.js"
         }
       },
       "layer": {
-        "app/case-studies/page": "rsc"
+        "app/business-finance/page": "rsc"
       },
-      "filename": "src/actions/caseStudyIndex.actions.js",
-      "exportedName": "updateCaseStudyIndex"
+      "filename": "src/actions/businessCategory.actions.js",
+      "exportedName": "deleteBusinessCategory"
+    },
+    "40f92fb5c888253464cd44f0d0d052d5c35faca777": {
+      "workers": {
+        "app/business-finance/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessCategory.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/businessFundingIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createBusinessCategory",
+          "filename": "src/actions/businessCategory.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/page": "rsc"
+      },
+      "filename": "src/actions/businessCategory.actions.js",
+      "exportedName": "createBusinessCategory"
+    },
+    "60a9ea665e420dcf4381e395e4077dd3de7c8bbbbc": {
+      "workers": {
+        "app/business-finance/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessCategory.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/businessFundingIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateBusinessCategory",
+          "filename": "src/actions/businessCategory.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/page": "rsc"
+      },
+      "filename": "src/actions/businessCategory.actions.js",
+      "exportedName": "updateBusinessCategory"
+    },
+    "009143b9d97709fb7eb6c3bb53109d341ef823acab": {
+      "workers": {
+        "app/business-finance/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessCategory.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/businessFundingIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getBusinessFundingIndex",
+          "filename": "src/actions/businessFundingIndex.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/page": "rsc"
+      },
+      "filename": "src/actions/businessFundingIndex.actions.js",
+      "exportedName": "getBusinessFundingIndex"
+    },
+    "404daebfa9767a37fe956739781ce82ae4d0faa547": {
+      "workers": {
+        "app/business-finance/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessCategory.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/businessFundingIndex.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateBusinessFundingIndex",
+          "filename": "src/actions/businessFundingIndex.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/page": "rsc"
+      },
+      "filename": "src/actions/businessFundingIndex.actions.js",
+      "exportedName": "updateBusinessFundingIndex"
+    },
+    "000de60b0a39fcfffad3126f8c906da45ce01c1fc6": {
+      "workers": {
+        "app/business-finance/[category]/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/[category]/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessFunding.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getBusinessFunding",
+          "filename": "src/actions/businessFunding.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/[category]/[slug]/page": "rsc"
+      },
+      "filename": "src/actions/businessFunding.actions.js",
+      "exportedName": "getBusinessFunding"
+    },
+    "4050577b5adb8ba734a08826a6e4542ad67a565d91": {
+      "workers": {
+        "app/business-finance/[category]/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/[category]/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessFunding.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getBusinessFundingById",
+          "filename": "src/actions/businessFunding.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/[category]/[slug]/page": "rsc"
+      },
+      "filename": "src/actions/businessFunding.actions.js",
+      "exportedName": "getBusinessFundingById"
+    },
+    "40a26ebc1fe34852d4494e9c9c3f162a39c8b4f3f9": {
+      "workers": {
+        "app/business-finance/[category]/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/[category]/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessFunding.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createBusinessFunding",
+          "filename": "src/actions/businessFunding.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/[category]/[slug]/page": "rsc"
+      },
+      "filename": "src/actions/businessFunding.actions.js",
+      "exportedName": "createBusinessFunding"
+    },
+    "40b180ae5c452474d24969bbd2445f53a67582f7d5": {
+      "workers": {
+        "app/business-finance/[category]/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/[category]/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessFunding.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getBusinessFundingByCategory",
+          "filename": "src/actions/businessFunding.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/[category]/[slug]/page": "rsc"
+      },
+      "filename": "src/actions/businessFunding.actions.js",
+      "exportedName": "getBusinessFundingByCategory"
+    },
+    "40b94a21667868bb70a373e995cc440f0dd6b199e0": {
+      "workers": {
+        "app/business-finance/[category]/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/[category]/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessFunding.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteBusinessFunding",
+          "filename": "src/actions/businessFunding.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/[category]/[slug]/page": "rsc"
+      },
+      "filename": "src/actions/businessFunding.actions.js",
+      "exportedName": "deleteBusinessFunding"
+    },
+    "40c160fe3e27b79fdbac1dcdc89be36b18d6af5f6a": {
+      "workers": {
+        "app/business-finance/[category]/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/[category]/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessFunding.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getBusinessFundingBySlug",
+          "filename": "src/actions/businessFunding.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/[category]/[slug]/page": "rsc"
+      },
+      "filename": "src/actions/businessFunding.actions.js",
+      "exportedName": "getBusinessFundingBySlug"
+    },
+    "60e65aa388f19af8f31412111334fcd3aaa72eac8d": {
+      "workers": {
+        "app/business-finance/[category]/[slug]/page": {
+          "moduleId": "[project]/.next-internal/server/app/business-finance/[category]/[slug]/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/businessFunding.actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateBusinessFunding",
+          "filename": "src/actions/businessFunding.actions.js"
+        }
+      },
+      "layer": {
+        "app/business-finance/[category]/[slug]/page": "rsc"
+      },
+      "filename": "src/actions/businessFunding.actions.js",
+      "exportedName": "updateBusinessFunding"
     }
   },
   "edge": {},

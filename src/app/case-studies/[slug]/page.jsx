@@ -4,6 +4,7 @@ import {
   getOtherCaseStudies,
 } from "@/actions/caseStudy.actions";
 import Banner from "@/components/Banner";
+import { getCustomUrl } from "@/utils/urlTransform";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }) {
         url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
+      url: `https://aws-privatefinance.co.uk/case-studies/${paramsId.slug}`, // Must be an absolute URL
     }
   };
 }
@@ -44,15 +46,16 @@ export default async function Page({ params }) {
 
   return (
     <>
+      <link rel="canonical" href={`https://aws-privatefinance.co.uk/case-studies/${paramsSlug.slug}`} />
       <Banner
         isNewsPage={true}
         caseStudy={true}
-        caseStudyImage={study?.image}
+        caseStudyImage={getCustomUrl(study.image) || study.image}
       />
       <div className="section-container">
         <div className="flex flex-col lg:flex-row gap-8">
           <div
-            className="editor-container flex-1"
+            className="tw-reset"
             dangerouslySetInnerHTML={{ __html: study?.description || "" }}
           ></div>
 

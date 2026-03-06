@@ -25,7 +25,7 @@ export default async function CaseStudies() {
           </Link>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-0.5 mt-7">
-          {studies.map((card, index) => (
+          {studies?.map((card, index) => (
             <CaseStudyCard key={index} card={card} index={index} />
           ))}
         </div>

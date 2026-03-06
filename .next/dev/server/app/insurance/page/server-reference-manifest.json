@@ -1,0 +1,140 @@
+{
+  "node": {
+    "00836a51711bfd6308ebaebf1946f93fbfe0068656": {
+      "workers": {
+        "app/insurance/page": {
+          "moduleId": "[project]/.next-internal/server/app/insurance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/insurance.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/insuranceIndex.model.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getInsurance",
+          "filename": "src/actions/insurance.actions.js"
+        }
+      },
+      "layer": {
+        "app/insurance/page": "rsc"
+      },
+      "exportedName": "getInsurance",
+      "filename": "src/actions/insurance.actions.js"
+    },
+    "00e5933ebbefc73cf38f1ef18569ade59a798c2f61": {
+      "workers": {
+        "app/insurance/page": {
+          "moduleId": "[project]/.next-internal/server/app/insurance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/insurance.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/insuranceIndex.model.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getInsuranceNames",
+          "filename": "src/actions/insurance.actions.js"
+        }
+      },
+      "layer": {
+        "app/insurance/page": "rsc"
+      },
+      "exportedName": "getInsuranceNames",
+      "filename": "src/actions/insurance.actions.js"
+    },
+    "400c127ca3aac10d9e4d6de10883a239ba5c144283": {
+      "workers": {
+        "app/insurance/page": {
+          "moduleId": "[project]/.next-internal/server/app/insurance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/insurance.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/insuranceIndex.model.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "deleteInsurance",
+          "filename": "src/actions/insurance.actions.js"
+        }
+      },
+      "layer": {
+        "app/insurance/page": "rsc"
+      },
+      "exportedName": "deleteInsurance",
+      "filename": "src/actions/insurance.actions.js"
+    },
+    "401feb4faa121f33874826e395d2ad93436c411e93": {
+      "workers": {
+        "app/insurance/page": {
+          "moduleId": "[project]/.next-internal/server/app/insurance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/insurance.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/insuranceIndex.model.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getInsuranceById",
+          "filename": "src/actions/insurance.actions.js"
+        }
+      },
+      "layer": {
+        "app/insurance/page": "rsc"
+      },
+      "exportedName": "getInsuranceById",
+      "filename": "src/actions/insurance.actions.js"
+    },
+    "40aa16a8947169e610ae534ef55287fd7b962c0f35": {
+      "workers": {
+        "app/insurance/page": {
+          "moduleId": "[project]/.next-internal/server/app/insurance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/insurance.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/insuranceIndex.model.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "createInsurance",
+          "filename": "src/actions/insurance.actions.js"
+        }
+      },
+      "layer": {
+        "app/insurance/page": "rsc"
+      },
+      "exportedName": "createInsurance",
+      "filename": "src/actions/insurance.actions.js"
+    },
+    "40c3a120346e3e63e8c5c882ad43da9f602e6ef847": {
+      "workers": {
+        "app/insurance/page": {
+          "moduleId": "[project]/.next-internal/server/app/insurance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/insurance.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/insuranceIndex.model.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getInsuranceBySlug",
+          "filename": "src/actions/insurance.actions.js"
+        }
+      },
+      "layer": {
+        "app/insurance/page": "rsc"
+      },
+      "exportedName": "getInsuranceBySlug",
+      "filename": "src/actions/insurance.actions.js"
+    },
+    "60d25a5ccfc0df5f7e60fad437ffe4cf5d7b475e92": {
+      "workers": {
+        "app/insurance/page": {
+          "moduleId": "[project]/.next-internal/server/app/insurance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/insurance.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/insuranceIndex.model.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateInsurance",
+          "filename": "src/actions/insurance.actions.js"
+        }
+      },
+      "layer": {
+        "app/insurance/page": "rsc"
+      },
+      "exportedName": "updateInsurance",
+      "filename": "src/actions/insurance.actions.js"
+    },
+    "0017304e706e385d847bb9148d43aac8e0fdf82ce0": {
+      "workers": {
+        "app/insurance/page": {
+          "moduleId": "[project]/.next-internal/server/app/insurance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/insurance.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/insuranceIndex.model.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "getInsuranceIndex",
+          "filename": "src/actions/insuranceIndex.model.js"
+        }
+      },
+      "layer": {
+        "app/insurance/page": "rsc"
+      },
+      "exportedName": "getInsuranceIndex",
+      "filename": "src/actions/insuranceIndex.model.js"
+    },
+    "4071a653d11ded504e207f14b0cb745b05247d65da": {
+      "workers": {
+        "app/insurance/page": {
+          "moduleId": "[project]/.next-internal/server/app/insurance/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/actions/insurance.actions.js [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/src/actions/insuranceIndex.model.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "updateInsuranceIndex",
+          "filename": "src/actions/insuranceIndex.model.js"
+        }
+      },
+      "layer": {
+        "app/insurance/page": "rsc"
+      },
+      "exportedName": "updateInsuranceIndex",
+      "filename": "src/actions/insuranceIndex.model.js"
+    }
+  },
+  "edge": {}
+}

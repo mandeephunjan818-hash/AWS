@@ -118,7 +118,8 @@ export async function deleteBusinessFunding(id) {
 
 export async function getBusinessFundingBySlug(slug) {
   try {
-    const data = await BusinessFunding.findOne({ slug }).lean();
+    await dbConnect();
+    const data = await BusinessFunding.findOne({ slug: slug }).lean();
     return { success: true, data };
   } catch (error) {
     return { success: false, error: error.message };

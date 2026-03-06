@@ -19,16 +19,45 @@ export async function generateMetadata() {
         url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
+      url: 'https://aws-privatefinance.co.uk/news', // Must be an absolute URL
     }
   };
 }
 
 export default async function News() {
 
+  const NewsStudy = await getNewsStudies();
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "AWS Private Finance News & Insights",
+    "description": "Latest insights, market updates, mortgage news, and financial articles from AWS Private Finance.",
+    "url": "https://aws-privatefinance.co.uk/news",
+    "numberOfItems": 6,
+    "itemListElement": NewsStudy?.studies?.slice(0, 6).map((study, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": `https://aws-privatefinance.co.uk/news`,
+      "name": study.title?.replace(/"/g, "'"),
+      "datePublished": study.updatedAt,
+      "description": study.metaDescription?.replace(/"/g, "'")
+    })) || []
+  };
+
   const [{ studies }, { data }] = await Promise.all([getNewsStudies(), getNewsIndex()]);
 
   return (
     <>
+
+      <link rel="canonical" href={`https://aws-privatefinance.co.uk/news`} />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
+      >
+      </script>
+
       <Banner />
       <div className="section-container py-12">
         {data.content && (

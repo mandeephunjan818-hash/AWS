@@ -135,6 +135,7 @@ function InnerBanner({ isNewsPage = false, image = "https://awsmortgages.co.uk/w
         const lastSegment = segments[segments.length - 1];
         return lastSegment.split("-").map((word)=>word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
     };
+    console.log("image", image);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "relative h-[65vh] md:h-[70vh] pt-28 md:pt-20",
         children: [
@@ -147,7 +148,7 @@ function InnerBanner({ isNewsPage = false, image = "https://awsmortgages.co.uk/w
                 className: "w-full h-full absolute inset-0 object-cover"
             }, void 0, false, {
                 fileName: "[project]/src/components/InnerBanner.jsx",
-                lineNumber: 28,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -162,7 +163,7 @@ function InnerBanner({ isNewsPage = false, image = "https://awsmortgages.co.uk/w
                                     className: "absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-x-16 -translate-y-16"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/InnerBanner.jsx",
-                                    lineNumber: 43,
+                                    lineNumber: 45,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -185,7 +186,7 @@ function InnerBanner({ isNewsPage = false, image = "https://awsmortgages.co.uk/w
                                                 className: "w-16 h-1 bg-white mb-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/InnerBanner.jsx",
-                                                lineNumber: 52,
+                                                lineNumber: 54,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -193,7 +194,7 @@ function InnerBanner({ isNewsPage = false, image = "https://awsmortgages.co.uk/w
                                                 children: getPageTitle()
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/InnerBanner.jsx",
-                                                lineNumber: 54,
+                                                lineNumber: 56,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -203,12 +204,12 @@ function InnerBanner({ isNewsPage = false, image = "https://awsmortgages.co.uk/w
                                                     align: "left"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/InnerBanner.jsx",
-                                                    lineNumber: 63,
+                                                    lineNumber: 65,
                                                     columnNumber: 19
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/InnerBanner.jsx",
-                                                lineNumber: 62,
+                                                lineNumber: 64,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -217,48 +218,48 @@ function InnerBanner({ isNewsPage = false, image = "https://awsmortgages.co.uk/w
                                                 children: "Speak to an Advisor"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/InnerBanner.jsx",
-                                                lineNumber: 66,
+                                                lineNumber: 68,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/InnerBanner.jsx",
-                                        lineNumber: 46,
+                                        lineNumber: 48,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/InnerBanner.jsx",
-                                    lineNumber: 45,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/InnerBanner.jsx",
-                            lineNumber: 42,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/InnerBanner.jsx",
-                        lineNumber: 41,
+                        lineNumber: 43,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "lg:col-span-1"
                     }, void 0, false, {
                         fileName: "[project]/src/components/InnerBanner.jsx",
-                        lineNumber: 76,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/InnerBanner.jsx",
-                lineNumber: 40,
+                lineNumber: 42,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/InnerBanner.jsx",
-        lineNumber: 27,
+        lineNumber: 29,
         columnNumber: 5
     }, this);
 }

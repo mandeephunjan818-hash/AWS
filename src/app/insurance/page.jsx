@@ -19,6 +19,7 @@ export async function generateMetadata() {
                 url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
             },
             type: 'website',
+            url: 'https://aws-privatefinance.co.uk/insurance', // Must be an absolute URL
         }
     }
 }
@@ -27,7 +28,8 @@ export default async function Insurance() {
     const [{ data }, indexData] = await Promise.all([getInsurance(), getInsuranceIndex()]);
     console.log("data", indexData)
     return (
-        <>
+        <>  
+            <link rel="canonical" href={`https://aws-privatefinance.co.uk/insurance`} />
             <Banner />
             <div>
                 <div className="section-container py-12">

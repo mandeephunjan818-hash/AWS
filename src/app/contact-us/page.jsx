@@ -207,6 +207,7 @@ export default function ContactUsPage() {
 
   return (
     <>
+      <link rel="canonical" href={`https://aws-privatefinance.co.uk/contact-us`} />
       <Banner />
       <div className="bg-gray-100">
         <div className="section-container py-12">
