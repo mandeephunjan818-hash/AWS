@@ -43,14 +43,14 @@ export default async function Page({ params }) {
     getCaseStudyBySlug(paramsSlug.slug),
     getOtherCaseStudies(paramsSlug.slug, 7),
   ]);
-
+  const image = getCustomUrl(study.image);
   return (
     <>
       <link rel="canonical" href={`https://aws-privatefinance.co.uk/case-studies/${paramsSlug.slug}`} />
       <Banner
         isNewsPage={true}
         caseStudy={true}
-        caseStudyImage={getCustomUrl(study.image) || study.image}
+        caseStudyImage={study.image}
       />
       <div className="section-container">
         <div className="flex flex-col lg:flex-row gap-8">
