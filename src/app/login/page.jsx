@@ -1,5 +1,5 @@
 "use client"
-import { login, register, warmUpDatabase } from "@/actions/auth.actions";
+import { login, warmUpDatabase } from "@/actions/auth.actions";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -41,15 +41,15 @@ export default function LoginPage() {
 
       if (result.success) {
         console.log("sucess", result);
-        router.push("/aws-backend");
         toast.success("Logged in successfully!");
+        window.location.href = "/aws-backend";
       } else {
         console.log("error 1", result);
         toast.error(result.error);
       }
     } catch (error) {
       console.log("error 2", error);
-      toast.error(error || error.message);
+      toast.error(error?.message || "Login failed. Please try again.");
     }
   }
 

@@ -46,14 +46,19 @@ export async function middleware(request) {
 
   if (pathname.startsWith("/aws-backend")) {
     if (!token) {
-      return NextResponse.redirect(new URL("/login", request.url));
+      const r = NextResponse.redirect(new URL("/login", request.url));
+      r.headers.set("x-auth-debug", "no-cookie");
+      return r;
     }
 
     try {
       await jwtVerify(token, new TextEncoder().encode(process.env.JWT_SECRET));
       return NextResponse.next();
     } catch (error) {
-      return NextResponse.redirect(new URL("/login", request.url));
+      console.log("[auth] JWT verify failed on /aws-backend:", error?.message, "| JWT_SECRET set in middleware:", Boolean(process.env.JWT_SECRET));
+      const r = NextResponse.redirect(new URL("/login", request.url));
+      r.headers.set("x-auth-debug", process.env.JWT_SECRET ? "verify-failed" : "no-secret-in-middleware");
+      return r;
     }
   }
 

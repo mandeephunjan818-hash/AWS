@@ -25,10 +25,10 @@ export async function login(formData) {
       return { error: "Invalid credentials" };
     }
 
-    const secret = new TextEncoder().encode(process.env.JWT_SECRET);
-    if (!secret) {
+    if (!process.env.JWT_SECRET) {
       throw new Error("JWT_SECRET environment variable is not set");
     }
+    const secret = new TextEncoder().encode(process.env.JWT_SECRET);
 
     const token = await new SignJWT({ userId: user._id })
       .setProtectedHeader({ alg: "HS256" })
@@ -66,28 +66,6 @@ export async function logout() {
 export async function warmUpDatabase() {
   try {
     await dbConnect();
-    return { success: true };
-  } catch (error) {
-    return { success: false, error: error.message };
-  }
-}
-
-export async function register() {
-  console.log("register");
-  const username = "awsadmin";
-  const password = "awsaccess02";
-
-  try {
-    await dbConnect();
-    const existingUser = await User.findOne({ username });
-    if (existingUser) {
-      return { success: false, error: "Username already exists" };
-    }
-    // const hashedPassword = await bcrypt.hash(password, 10);
-    const user = await User.create({
-      username,
-      password,
-    });
     return { success: true };
   } catch (error) {
     return { success: false, error: error.message };
