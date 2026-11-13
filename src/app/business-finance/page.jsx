@@ -2,21 +2,22 @@ import Banner from "@/components/Banner";
 import { getBusinessCategory } from "@/actions/businessCategory.actions";
 import { CategoryCard } from "@/components/CategoryCard";
 import { getBusinessFundingIndex } from "@/actions/businessFundingIndex.actions";
+import getLocalImageUrl from "@/lib/ChangeImageUrl";
 
 export const revalidate = 2592000;
 
 export async function generateMetadata() {
   const { data } = await getBusinessFundingIndex();
   return {
-    title: data?.metaTitle,
-    description: data?.metaDescription,
+    title: "Business Finance UK | Flexible Funding Solutions",
+    description: "Looking for business finance? We help UK businesses secure funding fast, with access to unrestricted lenders and expert, FCA-regulated guidance.",
     keywords: data?.metaKeywords,
     openGraph: {
-      title: data?.metaTitle,
-      description: data?.metaDescription,
+      title: "Business Finance UK | Flexible Funding Solutions",
+      description: "Looking for business finance? We help UK businesses secure funding fast, with access to unrestricted lenders and expert, FCA-regulated guidance.",
       images:
       {
-        url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
+        url: `https://aws-privatefinance.co.uk/lionicon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
       url: 'https://aws-privatefinance.co.uk/business-finance', // Must be an absolute URL
@@ -50,7 +51,7 @@ export default async function BusinessFunding() {
             <CategoryCard
               key={index}
               heading={item.heading}
-              image={item.image}
+              image={getLocalImageUrl(item.image)}
               imageAlt={item.imageAlt}
               slug={`business-finance/${item.slug}`}
             />

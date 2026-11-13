@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     domains: ["res.cloudinary.com"],
+    contentDispositionType: 'inline',
   },
   async rewrites() {
     return [

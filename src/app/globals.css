@@ -104,7 +104,7 @@
   letter-spacing: 1px !important;
 }
 
-.tw-reset h2{
+.tw-reset h2 {
   font-weight: 600 !important;
 }
 
@@ -114,4 +114,29 @@
 
 :root {
   --menu-top: 70px;
+}
+
+.not-found {
+  height: 100vh !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+  color: rgb(0, 0, 0) !important;
+  font-size: 16px !important;
+}
+
+.preferred-source-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+}
+
+@media (max-width: 768px) {
+  .preferred-source-float {
+    right: 12px;
+    bottom: 12px;
+  }
 }

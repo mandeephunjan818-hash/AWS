@@ -16,7 +16,7 @@ export async function generateMetadata() {
             description: indexData?.metaDescription,
             images:
             {
-                url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
+                url: `https://aws-privatefinance.co.uk/lionicon.jpeg`, // Must be an absolute URL
             },
             type: 'website',
             url: 'https://aws-privatefinance.co.uk/commercial-finance', // Must be an absolute URL

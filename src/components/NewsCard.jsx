@@ -1,3 +1,4 @@
+import getLocalImageUrl from "@/lib/ChangeImageUrl";
 import Image from "next/image";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
@@ -6,7 +7,7 @@ export default function NewsCard({ card, index }) {
   return (
     <Link href={`/news/${card.slug}`} className="p-4 shadow-2xl" key={index}>
       <Image
-        src={card.image}
+        src={getLocalImageUrl(card.image)}
         width={400}
         height={400}
         alt="alt"

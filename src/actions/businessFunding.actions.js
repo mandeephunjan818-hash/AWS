@@ -116,6 +116,39 @@ export async function deleteBusinessFunding(id) {
 //   }
 // }
 
+export async function getBusinessFundingBySlugCategory(slug) {
+  try {
+    await dbConnect();
+    const data = await BusinessFunding.findOne({ slug: slug.slug }).lean();
+
+    if (!data) {
+      return { success: false, error: "Business Funding not found" };
+    }
+
+    const serializeddata = {
+      ...data,
+      _id: data?._id?.toString(),
+      category: String(data?.category) === "67f7a130bb68239130acb53a" ? "healthcare-finance" : "business-funding",
+      categoryName: data?.category
+        ? data.category.heading
+        : "",
+      categorySlug: data?.category
+        ? data.category.slug
+        : "",
+    };
+
+    console.log('seriallize  ', serializeddata);
+
+    const result = [serializeddata].filter((items) => {
+      if (items.category === slug.category) return items;
+    })
+
+    return { success: true, data: result[0] || null };
+  } catch (error) {
+    return { success: false, error: error.message };
+  }
+}
+
 export async function getBusinessFundingBySlug(slug) {
   try {
     await dbConnect();
@@ -125,7 +158,6 @@ export async function getBusinessFundingBySlug(slug) {
     return { success: false, error: error.message };
   }
 }
-
 export async function getBusinessFundingByCategory(categorySlug) {
   try {
     await dbConnect();

@@ -4,18 +4,13 @@ import {
   getOtherCaseStudies,
 } from "@/actions/caseStudy.actions";
 import Banner from "@/components/Banner";
+import getLocalImageUrl from "@/lib/ChangeImageUrl";
 import { getCustomUrl } from "@/utils/urlTransform";
 import Image from "next/image";
 import Link from "next/link";
+import ObfuscatedEmailLink from "@/components/ObfuscatedEmailLink";
 
 export const revalidate = 300;
-
-// export async function generateStaticParams() {
-//   const { studies } = await getCaseStudies();
-//   return studies.map((study) => ({
-//     slug: study.slug,
-//   }));
-// }
 
 export async function generateMetadata({ params }) {
   const paramsId = await params;
@@ -29,10 +24,10 @@ export async function generateMetadata({ params }) {
       description: study?.metaDescription,
       images:
       {
-        url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
+        url: `https://aws-privatefinance.co.uk/lionicon.jpeg`,
       },
       type: 'website',
-      url: `https://aws-privatefinance.co.uk/case-studies/${paramsId.slug}`, // Must be an absolute URL
+      url: `https://aws-privatefinance.co.uk/case-studies/${paramsId.slug}`,
     }
   };
 }
@@ -50,7 +45,7 @@ export default async function Page({ params }) {
       <Banner
         isNewsPage={true}
         caseStudy={true}
-        caseStudyImage={study.image}
+        caseStudyImage={getLocalImageUrl(study.image)}
       />
       <div className="section-container">
         <div className="flex flex-col lg:flex-row gap-8">
@@ -71,7 +66,7 @@ export default async function Page({ params }) {
                       className="flex items-center lg:justify-between text-sm py-2 border-b border-gray-200 gap-2"
                     >
                       <Image
-                        src={link.image}
+                        src={getLocalImageUrl(link.image)}
                         width={80}
                         height={120}
                         alt={link.imageAlt}
@@ -111,7 +106,7 @@ export default async function Page({ params }) {
                         />
                       </svg>
                       <Link href="tel:+44(0)2045539750">
-                        +44(0)204 553 9750
+                        +44(0)204 553 9750
                       </Link>
                     </div>
                     <div className="flex items-center gap-3 text-sm">
@@ -128,9 +123,7 @@ export default async function Page({ params }) {
                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                         />
                       </svg>
-                      <Link href="mailto:info@awsmortgages.co.uk">
-                        info@awsmortgages.co.uk
-                      </Link>
+                      <ObfuscatedEmailLink />
                     </div>
                   </div>
                   <Link

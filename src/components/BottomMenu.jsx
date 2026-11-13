@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import {
   HiPhone,
@@ -10,10 +11,16 @@ import {
 } from "react-icons/hi2";
 
 export default function BottomMenu() {
+  const [email, setEmail] = useState(null);
+  useEffect(() => {
+    setEmail(`info@awsmortgages.co.uk`);
+  }, []);
+
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 lg:hidden z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
       <div className="flex items-end justify-between px-4 sm:px-8">
         <div className="flex justify-center py-1.5">
+
           <a
             href="tel:+44(0)203 488 1541"
             className="flex flex-col items-center justify-center text-gray-600 "
@@ -28,8 +35,9 @@ export default function BottomMenu() {
         </div>
 
         <div className="flex justify-center py-1.5">
+
           <a
-            href="mailto:info@awsmortgages.co.uk"
+            href={email ? `mailto:${email}` : "#"}
             className="flex flex-col items-center justify-center text-gray-600 "
           >
             <div className="p-2 rounded-full ">
@@ -82,7 +90,7 @@ export default function BottomMenu() {
             </span>
           </Link>
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   );
 }

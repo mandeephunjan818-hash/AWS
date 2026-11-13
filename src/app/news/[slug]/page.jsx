@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import parse from "html-react-parser";
 import { getCustomUrl } from "@/utils/urlTransform";
+import getLocalImageUrl from "@/lib/ChangeImageUrl";
 
 export const revalidate = 300;
 
@@ -23,7 +24,7 @@ export async function generateMetadata({ params }) {
       description: study?.metaDescription,
       images:
       {
-        url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
+        url: `https://aws-privatefinance.co.uk/lionicon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
       url: `https://aws-privatefinance.co.uk/news/${paramsId.slug}`, // Must be an absolute URL
@@ -46,7 +47,7 @@ export default async function NewsPage({ params }) {
 
       <link rel="canonical" href={`https://aws-privatefinance.co.uk/news/${paramsSlug.slug}`} />
 
-      <InnerBanner image={study?.image} isNewsPage={true} />
+      <InnerBanner image={getLocalImageUrl(study?.image)} isNewsPage={true} />
 
       <div className="section-container py-16">
 
@@ -70,7 +71,7 @@ export default async function NewsPage({ params }) {
                       className="flex items-center lg:justify-between text-sm py-2 border-b border-gray-200 gap-2"
                     >
                       <Image
-                        src={link.image}
+                        src={getLocalImageUrl(link.image)}
                         width={80}
                         height={120}
                         alt={link.imageAlt}

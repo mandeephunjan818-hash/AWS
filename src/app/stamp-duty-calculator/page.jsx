@@ -12,7 +12,7 @@ export async function generateMetadata() {
         description: 'AWS Private Finance - calculator',
         images:
         {
-          url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
+          url: `https://aws-privatefinance.co.uk/lionicon.jpeg`, // Must be an absolute URL
         },
         type: 'website',
       },

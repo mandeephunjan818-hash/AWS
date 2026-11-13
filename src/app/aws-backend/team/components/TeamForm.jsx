@@ -15,7 +15,9 @@ export default function TeamForm({ initialData }) {
         image: initialData?.image || "",
         imageAlt: initialData?.imageAlt || "",
         imageUrl: initialData?.imageUrl || "",
-        team: initialData?.team || ""
+        team: initialData?.team || "",
+        order: initialData?.order ?? 0,
+        teamOrder: initialData?.teamOrder ?? 0,
     });
     const [teams, setTeams] = useState(null);
 
@@ -33,12 +35,17 @@ export default function TeamForm({ initialData }) {
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
-            console.log(formData);
+            const payload = {
+                ...formData,
+                order: Number(formData.order) || 0,
+                teamOrder: Number(formData.teamOrder) || 0,
+            };
+            console.log(payload);
             if (initialData) {
-                await updateTeamMember(initialData._id, formData);
+                await updateTeamMember(initialData._id, payload);
                 toast.success("Team member updated successfully!");
             } else {
-                await createTeamMember(formData);
+                await createTeamMember(payload);
                 toast.success("Team member created successfully!");
             }
             // router.push("/aws-backend/team");
@@ -107,6 +114,27 @@ export default function TeamForm({ initialData }) {
                         ))
                     )}
                 </select>
+
+                <label htmlFor="order">Person Order</label>
+                <input
+                    type="number"
+                    id="order"
+                    value={formData.order}
+                    onChange={(e) => handleChange('order', e.target.value)}
+                    placeholder="Order within team (lower shows first)"
+                />
+
+                <label htmlFor="teamOrder">Team Order</label>
+                <input
+                    type="number"
+                    id="teamOrder"
+                    value={formData.teamOrder}
+                    onChange={(e) => handleChange('teamOrder', e.target.value)}
+                    placeholder="Order of this team section (lower shows first)"
+                />
+                <p className="text-xs text-muted-foreground">
+                    Use the same Team Order value for every member of the same team.
+                </p>
             </div>
             <div>
                 <ImageInput

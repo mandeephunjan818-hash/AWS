@@ -4,25 +4,20 @@ import { FaChevronRight } from "react-icons/fa";
 
 export const revalidate = 2592000;
 
-export async function generateMetadata() {
-  return {
-    title: "AWS Private Finance - About Us ",
-    description: "AWS Private Finance - About Us",
-    icons: {
-      icon: "/favicon.png",
+export const metadata = {
+  title: 'About Us |  AWS Private Finance ',
+  description: 'AWS Private Finance is an award-winning mortgage and protection advisory helping professionals and contractors secure tailored mortgage solutions.',
+  openGraph: {
+    title: 'About Us |  AWS Private Finance ',
+    description: 'AWS Private Finance is an award-winning mortgage and protection advisory helping professionals and contractors secure tailored mortgage solutions.',
+    images:
+    {
+      url: `https://aws-privatefinance.co.uk/lionicon.jpeg`, // Must be an absolute URL
     },
-    openGraph: {
-      title: 'AWS Private Finance',
-      description: 'AWS Private Finance',
-      images:
-      {
-        url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
-      },
-      type: 'website',
-      url: 'https://aws-privatefinance.co.uk/about-us', // Must be an absolute URL
-    },
-  };
-}
+    type: 'website',
+    url: `https://aws-privatefinance.co.uk/about-us`, // Must be an absolute URL
+  }
+};
 
 const services = [
   "Commercial Insurance",

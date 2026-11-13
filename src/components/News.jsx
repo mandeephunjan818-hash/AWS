@@ -29,6 +29,13 @@ export default async function News() {
           alt="alt"
           className="mt-3"
         />
+        <Image
+          src="/nacfb-logo.png"
+          width={200}
+          height={200}
+          alt="alt"
+          className="mt-5"
+        />
       </div>
       <div className="md:w-[60%] grid sm:grid-cols-2 gap-6">
         {studies?.map((card, index) => (

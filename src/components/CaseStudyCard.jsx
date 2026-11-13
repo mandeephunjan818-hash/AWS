@@ -1,3 +1,4 @@
+import getLocalImageUrl from "@/lib/ChangeImageUrl";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +14,7 @@ export default function CaseStudyCard({ card }) {
   return (
     <Link href={`/case-studies/${card.slug}`} className="relative h-full">
       <Image
-        src={card.image}
+        src={getLocalImageUrl(card.image)}
         width={1200}
         height={1200}
         alt="alt"

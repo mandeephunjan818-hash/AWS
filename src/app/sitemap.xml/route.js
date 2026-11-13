@@ -2,9 +2,11 @@ import { getBusinessCategory } from "@/actions/businessCategory.actions";
 import { getBusinessFunding } from "@/actions/businessFunding.actions";
 import { getCaseStudies } from "@/actions/caseStudy.actions";
 import { getCommercialFinances } from "@/actions/commercialFinance.actions";
+import { getHealth } from "@/actions/health.actions";
 import { getInsurance } from "@/actions/insurance.actions";
 import { getMortage } from "@/actions/mortgage.actions";
 import { getNewsStudies } from "@/actions/newStudy.actions";
+import { getSubHealth } from "@/actions/subHealth.actions";
 import { getSubInsurance } from "@/actions/subInsurance.actions";
 import { getSubMortgage } from "@/actions/subMortgage.actions";
 
@@ -19,9 +21,11 @@ export async function GET() {
     const CommercialFinanace = await getCommercialFinances();
     const Insurance = await getInsurance();
     const Mortagage = await getMortage();
+    const Health = await getHealth();
     const NewsStudy = await getNewsStudies();
     const SubInsurance = await getSubInsurance();
     const SubMortgage = await getSubMortgage();
+    const SubHealth = await getSubHealth();
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset
@@ -39,6 +43,11 @@ export async function GET() {
 </url>
 <url>
   <loc>https://aws-privatefinance.co.uk/mortgages</loc>
+  <lastmod>2026-02-06T06:04:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aws-privatefinance.co.uk/health-care</loc>
   <lastmod>2026-02-06T06:04:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -73,6 +82,21 @@ export async function GET() {
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://aws-privatefinance.co.uk/meet-the-team</loc>
+  <lastmod>2026-02-06T06:04:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aws-privatefinance.co.uk/privacy-notice</loc>
+  <lastmod>2026-02-06T06:04:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aws-privatefinance.co.uk/complaints-policy</loc>
+  <lastmod>2026-02-06T06:04:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://aws-privatefinance.co.uk/contact-us</loc>
   <lastmod>2026-02-06T06:04:21+00:00</lastmod>
   <priority>0.80</priority>
@@ -80,6 +104,14 @@ export async function GET() {
 ${Array.isArray(Mortagage?.data) && Mortagage?.data.map(Mortagage => `
   <url>
     <loc>https://aws-privatefinance.co.uk/mortgages/${Mortagage.slug}</loc>
+    <lastmod>2026-02-06T15:45:52.480Z</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  `).join('')}
+  ${Array.isArray(Health?.data) && Health?.data.map(Health => `
+  <url>
+    <loc>https://aws-privatefinance.co.uk/health-care/${Health.slug}</loc>
     <lastmod>2026-02-06T15:45:52.480Z</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
@@ -120,6 +152,14 @@ ${Array.isArray(SubMortgage?.data) && SubMortgage.data?.map(SubMortgage => `
   <url>
     <loc>https://aws-privatefinance.co.uk/mortgages/${SubMortgage.category}/${SubMortgage.slug}</loc>
     <lastmod>${SubMortgage.updatedAt ? new Date(SubMortgage.updatedAt).toISOString().replace(/\.\d{3}Z$/, '+00:00') : ''}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  `).join('')}
+  ${Array.isArray(SubHealth?.data) && SubHealth.data?.map(SubHealth => `
+  <url>
+    <loc>https://aws-privatefinance.co.uk/health-care/${SubHealth.category}/${SubHealth.slug}</loc>
+    <lastmod>${SubHealth.updatedAt ? new Date(SubHealth.updatedAt).toISOString().replace(/\.\d{3}Z$/, '+00:00') : ''}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -168,7 +208,7 @@ ${Array.isArray(Insurance.data) && Insurance.data?.map(Insurance => `
   `).join('')}
 ${Array.isArray(BussinessFunding?.data) && BussinessFunding.data?.map(BussinessFunding => `
   <url>
-    <loc>https://aws-privatefinance.co.uk/business-finance/${BussinessFunding.cate === "67f7a130bb68239130acb53a" ? "healthcare-finance" : "business-funding"}/${BussinessFunding.slug}</loc>
+    <loc>https://aws-privatefinance.co.uk/business-finance/${String(BussinessFunding.category) === "67f7a130bb68239130acb53a" ? "healthcare-finance" : "business-funding"}/${BussinessFunding.slug}</loc>
     <lastmod>2026-02-06T06:04:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.64</priority>

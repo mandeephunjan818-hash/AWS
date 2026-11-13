@@ -2,13 +2,32 @@ import { NextResponse } from "next/server";
 import { jwtVerify } from "jose";
 
 export async function middleware(request) {
-  const token = request.cookies.get("accessToken423798")?.value;
-  const { pathname } = request.nextUrl;
+  const { pathname, search } = request.nextUrl;
+  const host = request.headers.get("host") || "";
 
-  if (request.nextUrl.pathname === '/meet-the-team') {
-    return NextResponse.redirect(new URL('/', request.url))
+  // 0. Canonical WWW to non-WWW redirect (301 Permanent)
+  if (host.startsWith("www.")) {
+    const newHost = host.replace(/^www\./, "");
+    const redirectUrl = new URL(`${pathname}${search}`, `https://${newHost}`);
+    return NextResponse.redirect(redirectUrl, { status: 301 });
   }
 
+  const token = request.cookies.get("accessToken423798")?.value;
+
+  // 1. Cloudflare Email Obfuscation cleanup
+  if (pathname.startsWith("/cdn-cgi/")) {
+    return new NextResponse("Gone", { status: 410 });
+  }
+
+  // 2. Path Redirects
+  if (pathname === '/business-finance/business-funding/finance-for-dentists') {
+    return NextResponse.redirect(
+      new URL('/business-finance/healthcare-finance/finance-for-dentists', request.url),
+      301
+    );
+  }
+
+  // 3. Auth checks
   if (pathname === "/login") {
     if (token) {
       try {
@@ -24,8 +43,6 @@ export async function middleware(request) {
     }
     return NextResponse.next();
   }
-
-  if (pathname === "/meet-the-team") return NextResponse.redirect(new URL("/", request.url));
 
   if (pathname.startsWith("/aws-backend")) {
     if (!token) {
@@ -43,6 +60,16 @@ export async function middleware(request) {
   return NextResponse.next();
 }
 
+// Updated Matcher to catch all paths for host checks, excluding static assets/images
 export const config = {
-  matcher: ["/aws-backend/:path*", "/login"],
+  matcher: [
+    /*
+     * Match all request paths except for:
+     * - _next/static (static files)
+     * - _next/image (image optimization files)
+     * - favicon.ico (favicon file)
+     * - public folder files (.svg, .png, etc.)
+     */
+    "/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+  ],
 };

@@ -1,3 +1,4 @@
+import getLocalImageUrl from "@/lib/ChangeImageUrl";
 import Image from "next/image";
 import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
@@ -17,7 +18,7 @@ export default function Products({ startSlug = "", data }) {
                 className="block h-48 overflow-hidden"
               >
                 <Image
-                  src={item.image}
+                  src={getLocalImageUrl(item.image)}
                   alt={item.heading}
                   width={500}
                   height={500}

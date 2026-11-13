@@ -4,23 +4,20 @@ export async function GET() {
 
 # Developed by SEO Expert - 2026 Strategy 
 
- 
-
 User-agent: * 
 
 Disallow: /login/ 
 
 Disallow: /aws-backend/ 
 
+User-agent: *
+Disallow: /cdn-cgi/
  
-
 User-agent: * 
 
 Disallow: /?s= 
 
-Disallow: /search/ 
-
- 
+Disallow: /search/  
 
 Disallow: /refer/ 
 
@@ -28,11 +25,7 @@ Disallow: /goto/
 
 Disallow: /cgi-bin/ 
 
- 
-
 Disallow: /author/ 
-
- 
 
 Disallow: */feed/ 
 
@@ -40,45 +33,25 @@ Disallow: */trackback/
 
 Disallow: */embed/ 
 
- 
-
- 
-
 User-agent: Adsbot-Google 
 
 Allow: / 
-
- 
 
 User-agent: Googlebot-Mobile 
 
 Allow: / 
 
- 
-
 User-agent: AhrefsBot 
 
 Allow: / 
 
- 
-
 User-agent: BLEXBot 
 
 Disallow: / 
- 
 
 User-agent: MJ12bot 
 
 Disallow: / 
-
- 
-
- 
-
-Sitemap Location :  
-
-Sitemap: https://aws-privatefinance.co.uk/sitemap.xml 
-
  
     `
 

@@ -7,7 +7,9 @@ import Team from "@/models/team.model";
 export async function getTeamMembers() {
   try {
     await dbConnect();
-    const teamMembers = await Team.find({}).lean();
+    const teamMembers = await Team.find({})
+      .sort({ teamOrder: 1, order: 1 })
+      .lean();
     const serializedTeamMembers = teamMembers.map((member) => {
       return {
         ...member,

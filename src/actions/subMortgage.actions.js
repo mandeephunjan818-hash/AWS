@@ -21,13 +21,13 @@ export async function getSubMortgage() {
 }
 
 export async function createSubMortgage(formData) {
-  console.log("data coming",formData)
+  console.log("data coming", formData)
   try {
     await dbConnect();
     const datacreated = await SubMortgage.create(formData);
-    console.log("data created",datacreated)
-    revalidatePath("/aws-backend","layout");
-    revalidatePath("/","layout");
+    console.log("data created", datacreated)
+    revalidatePath("/aws-backend", "layout");
+    revalidatePath("/", "layout");
     return { success: true };
   } catch (error) {
     return { success: false, error: error.message };
@@ -38,8 +38,8 @@ export async function updateSubMortgage(id, data) {
   try {
     await dbConnect();
     await SubMortgage.findByIdAndUpdate(id, data);
-    revalidatePath("/aws-backend","layout");
-    revalidatePath("/","layout");
+    revalidatePath("/aws-backend", "layout");
+    revalidatePath("/", "layout");
     return { success: true };
   } catch (error) {
     return { success: false, error: error.message };
@@ -50,8 +50,8 @@ export async function deleteSubMortgage(id) {
   try {
     await dbConnect();
     await SubMortgage.findByIdAndDelete(id);
-    revalidatePath("/aws-backend","layout");
-    revalidatePath("/","layout");
+    revalidatePath("/aws-backend", "layout");
+    revalidatePath("/", "layout");
     return { success: true };
   } catch (error) {
     return { success: false, error: error.message };
@@ -79,35 +79,54 @@ export async function getSubMortgageById(id) {
 export async function getSubMortgageBySlug(slug) {
   try {
     await dbConnect();
-    const subMortgage = await SubMortgage.find({ category:slug }).lean();
+    const subMortgage = await SubMortgage.find({ category: slug }).lean();
     if (!subMortgage) {
       return { success: false, error: "SubMortgage not found" };
     }
-   const serializedSubMortgage = subMortgage.map((subMortgage) => {
-     return {
-       ...subMortgage,
-       _id: subMortgage?._id?.toString(),
-     };
-   })
+    const serializedSubMortgage = subMortgage.map((subMortgage) => {
+      return {
+        ...subMortgage,
+        _id: subMortgage?._id?.toString(),
+      };
+    })
     return { success: true, data: serializedSubMortgage };
   } catch (error) {
     return { success: false, error: error.message };
   }
 }
 
-export async function getEachSubMortgage(slug){
-  try{
+export async function getSubMortgageBySlugCategory(slug) {
+  try {
     await dbConnect();
-    const subMortgage = await SubMortgage.findOne({slug}).lean();
-    if(!subMortgage){
-      return {success: false, error: "SubMortgage not found"}
+    const data = await SubMortgage.findOne({ slug: slug.slug }).lean();
+
+    if (!data) {
+      return { success: false, error: "Business Funding not found" };
+    }
+
+    const result = [data].filter((items) => {
+      if (items.category === slug.category) return items;
+    })
+
+    return { success: true, data: result[0] || null };
+  } catch (error) {
+    return { success: false, error: error.message };
+  }
+}
+
+export async function getEachSubMortgage(slug) {
+  try {
+    await dbConnect();
+    const subMortgage = await SubMortgage.findOne({ slug }).lean();
+    if (!subMortgage) {
+      return { success: false, error: "SubMortgage not found" }
     }
     const serializedSubMortgage = {
       ...subMortgage,
       _id: subMortgage?._id?.toString(),
     }
-    return {success: true, data: serializedSubMortgage}
-  }catch(error){
-    return {success: false, error: error.message}
+    return { success: true, data: serializedSubMortgage }
+  } catch (error) {
+    return { success: false, error: error.message }
   }
 }

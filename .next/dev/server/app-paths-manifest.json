@@ -1,5 +1,0 @@
-{
-  "/business-finance/[category]/[slug]/page": "app/business-finance/[category]/[slug]/page.js",
-  "/business-finance/page": "app/business-finance/page.js",
-  "/page": "app/page.js"
-}

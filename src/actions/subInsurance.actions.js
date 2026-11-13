@@ -92,6 +92,26 @@ export async function getSubInsuranceBySlug(slug) {
   }
 }
 
+export async function getSubInsuranceBySlugCategory(slug) {
+  try {
+    await dbConnect();
+    const data = await SubInsurance.findOne({ slug: slug.slug }).lean();
+
+    if (!data) {
+      return { success: false, error: "Business Funding not found" };
+    }
+
+    const result = [data].filter((items) => {
+      if (items.category === slug.category) return items;
+    })
+
+    return { success: true, data: result[0] || null };
+  } catch (error) {
+    return { success: false, error: error.message };
+  }
+}
+
+
 export async function getEachSubInsurance(slug){
   try{
     await dbConnect();

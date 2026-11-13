@@ -40,7 +40,7 @@ export async function generateMetadata() {
       description: 'AWS Private Finance - services',
       images:
       {
-        url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
+        url: `https://aws-privatefinance.co.uk/lionicon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
       url: 'https://aws-privatefinance.co.uk/services', // Must be an absolute URL

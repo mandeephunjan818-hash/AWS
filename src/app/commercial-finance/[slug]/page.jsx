@@ -2,6 +2,7 @@ import {
   getEachCommercialFinance,
 } from "@/actions/commercialFinance.actions";
 import InnerBanner from "@/components/InnerBanner";
+import getLocalImageUrl from "@/lib/ChangeImageUrl";
 import { getCustomUrl } from "@/utils/urlTransform";
 
 export const revalidate = 2592000;
@@ -18,7 +19,7 @@ export async function generateMetadata({ params }) {
       description: finance?.metaDescription,
       images:
       {
-        url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
+        url: `https://aws-privatefinance.co.uk/lionicon.jpeg`, // Must be an absolute URL
       },
       type: 'website',
       url: `https://aws-privatefinance.co.uk/commercial-finance/${paramsId.slug}`, // Must be an absolute URL
@@ -34,7 +35,7 @@ export default async function CommercialFinancePage({ params }) {
   return (
     <>
       <link rel="canonical" href={`https://aws-privatefinance.co.uk/commercial-finance/${paramsId.slug}`} />
-      <InnerBanner image={finance.image} />
+      <InnerBanner image={getLocalImageUrl(finance.image)} />
       <div className="section-container">
         <div className="flex flex-col md:flex-row gap-8">
           <div

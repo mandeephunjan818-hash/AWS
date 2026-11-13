@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 
 export default function TrustPilot() {
-  const [isClient, setIsClient] = useState(false);
+  // const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    setIsClient(true);
+    // setIsClient(true);
 
     const script = document.createElement("script");
     script.type = "text/javascript";
@@ -21,18 +21,26 @@ export default function TrustPilot() {
     };
   }, []);
 
-  if (!isClient) {
-    return null;
-  }
+  // if (!isClient) {
+  //   return null;
+  // }
 
   return (
     <div className="py-4 px-6 bg-gray-100">
-      <h1
-        style={{letterSpacing:'1px'}}
-        className="text-center mx-auto text-[18px] my-2 " 
-        data-style-height="24px"
-        data-style-alignment="center"
-       >Mortgage Broker London | Award-Winning Private Finance Experts</h1>
+      <span className="flex align-items-center flex-wrap justify-content-center gap-3 mx-auto" >
+        <h1
+          style={{ letterSpacing: '1px', width:"fit-content" }}
+          className="text-center text-[18px] ms-auto px-0 w-fit my-2 "
+          data-style-height="24px"
+          data-style-alignment="center"
+        >Mortgage Broker London </h1>
+        <div
+          style={{ letterSpacing: '1px', width:"fit-content" }}
+          className="text-center me-auto text-[18px] px-0 w-fit my-2 "
+          data-style-height="24px"
+          data-style-alignment="center"
+        >| Award-Winning Private Finance Experts</div>
+      </span>
       <div
         className="trustpilot-widget text-center mx-auto text-[18px] "
         data-locale="en-GB"

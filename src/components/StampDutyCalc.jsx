@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Banner from "./Banner";
 import GraphModal from "./GraphModal";
 import { BiCalculator } from "react-icons/bi";
-import { LuMessageCircleWarning } from "react-icons/lu";
 
 export default function StampDuty() {
   const [price, setPrice] = useState("");

@@ -22,7 +22,15 @@ const teamSchema = new mongoose.Schema({
     required: true,
     trim: true,
     minlength: [1, "Team cannot be empty"],
-  }
+  },
+  order: {
+    type: Number,
+    default: 0,
+  }, // this person's position within their team
+  teamOrder: {
+    type: Number,
+    default: 0,
+  }, // this team's position on the page (set the same value across all members of a team)
 });
 
 const Team = mongoose.models.Team || mongoose.model("Team", teamSchema);

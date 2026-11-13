@@ -49,6 +49,24 @@ export default function TeamTable({ initialData }) {
             )
         },
         {
+            header: "Team Order",
+            accessorKey: "teamOrder",
+            cell: ({ row }) => (
+                <span className="dashboard-table-value">
+                    {row.original.teamOrder ?? 0}
+                </span>
+            )
+        },
+        {
+            header: "Person Order",
+            accessorKey: "order",
+            cell: ({ row }) => (
+                <span className="dashboard-table-value">
+                    {row.original.order ?? 0}
+                </span>
+            )
+        },
+        {
             header: () => <div className="text-right">Actions</div>,
             accessorKey: "actions",
             cell: ({ row }) => (

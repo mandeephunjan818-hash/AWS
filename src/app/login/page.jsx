@@ -18,7 +18,7 @@ import toast from "react-hot-toast";
 //       description: 'AWS Private Finance',
 //       images:
 //       {
-//         url: `https://aws-privatefinance.co.uk/logodark.webp`, // Must be an absolute URL
+//         url: `https://aws-privatefinance.co.uk/logo-dark.webp`, // Must be an absolute URL
 //       },
 //       type: 'website',
 //     },

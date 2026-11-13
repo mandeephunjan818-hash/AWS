@@ -20,6 +20,7 @@ import { FaPersonBooth } from "react-icons/fa";
 import { IoBusiness } from "react-icons/io5";
 import { BiMoney } from "react-icons/bi";
 import { logout } from "@/actions/auth.actions";
+import { MdOutlineHealthAndSafety } from "react-icons/md";
 
 export default function DashboardLayout({ children }) {
   const menuItems = [
@@ -60,6 +61,15 @@ export default function DashboardLayout({ children }) {
         { title: "Mortgage", href: "/aws-backend/mortgage" },
         { title: "Sub Mortgage", href: "/aws-backend/submortgage" },
         { title: "Index Page Content", href: "/aws-backend/mortgage-index" },
+      ],
+    },
+    {
+      title: "Health Care",
+      icon: <MdOutlineHealthAndSafety className="h-5 w-5" />,
+      submenu: [
+        { title: "Health", href: "/aws-backend/health" },
+        { title: "Sub Health", href: "/aws-backend/subhealth" },
+        { title: "Index Page Content", href: "/aws-backend/health-index" },
       ],
     },
     {

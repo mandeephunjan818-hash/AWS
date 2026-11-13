@@ -1,25 +1,30 @@
 import Banner from "@/components/Banner";
 import Link from "next/link";
+import ObfuscatedEmailLink from "@/components/ObfuscatedEmailLink";
 
 
 export async function generateMetadata() {
-    return {
-      title: "AWS Private Finance - your rights ",
-      description: "AWS Private Finance - your rights",
-      icons: {
-        icon: "/favicon.png",
+  return {
+    title: "AWS Private Finance - your rights ",
+    description: "AWS Private Finance - your rights",
+    alternates: {
+      canonical: "https://aws-privatefinance.co.uk/your-rights",
+    },
+    icons: {
+      icon: "/favicon.png",
+    },
+    openGraph: {
+      title: 'AWS Private Finance - your rights',
+      description: 'AWS Private Finance - your rights',
+      images:
+      {
+        url: `https://aws-privatefinance.co.uk/lionicon.jpeg`,
       },
-      openGraph: {
-        title: 'AWS Private Finance - your rights',
-        description: 'AWS Private Finance - your rights',
-        images:
-        {
-          url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
-        },
-        type: 'website',
-      },
-    };
-  }
+      type: 'website',
+      url: 'https://aws-privatefinance.co.uk/your-rights',
+    },
+  };
+}
 
 export default function Rights() {
   return (
@@ -43,10 +48,7 @@ export default function Rights() {
         <br />
         Intra Private Finance Ltd <br /> <br /> 4th Floor , 7
         Cutler Street, London, United Kingdom, E1 7DJ <br /> <br />
-        Email:
-        <Link href="mailto:info@awsmortgages.co.uk">
-          info@awsmortgages.co.uk
-        </Link>
+        Email: <ObfuscatedEmailLink />
         <div>
           Phone:
           <Link href="tel:+44(0)203 488 1541"> +44(0)203 488 1541</Link>

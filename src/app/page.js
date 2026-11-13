@@ -6,7 +6,6 @@ import HeroServer from "@/components/HeroServer";
 import ProductsServer from "@/components/ProductsServer";
 import TrustPilot from "@/components/TrustPilot";
 
-
 export async function generateMetadata() {
   return {
     title: "Mortgage Broker London | AWS Private Finance",
@@ -19,10 +18,10 @@ export async function generateMetadata() {
       description: 'AWS Private Finance is an award-winning mortgage broker London firm, offering whole-of-market mortgage and protection advice to professionals.',
       images:
       {
-        url: `https://aws-privatefinance.co.uk/lion-icon.jpeg`, // Must be an absolute URL
+        url: `https://aws-privatefinance.co.uk/lionicon.jpeg`,
       },
       type: 'website',
-      url: 'https://aws-privatefinance.co.uk/', // Must be an absolute URL
+      url: 'https://aws-privatefinance.co.uk/',
     },
   };
 }
@@ -92,7 +91,6 @@ export default function Home() {
           "@id": "https://aws-privatefinance.co.uk/#organization"
         }
       },
-      // ✅ USE ItemList WITH PRIORITY ORDER - This is the strongest signal
       {
         "@type": "ItemList",
         "@id": "https://aws-privatefinance.co.uk/#sitelinks",
@@ -150,7 +148,6 @@ export default function Home() {
           }
         ]
       },
-      // ✅ Homepage WebPage linking to the ItemList
       {
         "@type": "WebPage",
         "@id": "https://aws-privatefinance.co.uk/#homepage",
@@ -163,7 +160,6 @@ export default function Home() {
         "about": {
           "@id": "https://aws-privatefinance.co.uk/#organization"
         },
-        // ✅ SignificantLink tells Google these are your main pages
         "significantLink": [
           "https://aws-privatefinance.co.uk/mortgages",
           "https://aws-privatefinance.co.uk/commercial-finance",
@@ -181,11 +177,17 @@ export default function Home() {
   return (
     <>
       <link rel="canonical" href="https://aws-privatefinance.co.uk/" />
+
+      
+      <script
+        async
+        src="https://news.google.com/swg/js/v1/publisher.js"
+      ></script>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }}
-      >
-      </script>
+      ></script>
 
       <HeroServer />
       <TrustPilot />
