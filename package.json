@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "TOKIO_WORKER_THREADS=2 RAYON_NUM_THREADS=2 next build --webpack",
     "start": "next start",
     "lint": "next lint",
     "migrate": "migrate-mongoose up"
